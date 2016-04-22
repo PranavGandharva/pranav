@@ -1,0 +1,2995 @@
+hr {
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    clear: both;
+    height: 1px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+/******************************************************************
+ Text Styles
+******************************************************************/
+/* Headings
+--------------------------*/
+
+h1 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+    font-weight: 300;
+}
+h2 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+h3 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+#quickSearchTitle h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+h5 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+h6 {
+    font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+/* Spacing
+--------------------------*/
+
+ol {
+    list-style: decimal;
+}
+ul {
+    list-style: disc;
+}
+br {
+    margin-bottom: 5px;
+}
+p {
+    margin: 0 0 20px;
+}
+/* Hyperlinks
+--------------------------*/
+
+a, a.active {
+    color: #1a99da;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+a:hover {
+    color: #004162;
+    cursor: pointer;
+}
+a:focus {
+    outline: none;
+    border: none;
+}
+/* Other
+--------------------------*/
+
+b, strong, .bold {
+    font-weight: bold;
+}
+i, em, .italics {
+    font-style: italic;
+}
+/* Colors
+--------------------------*/
+
+.lightBlue {
+    color: #1a99da;
+}
+.mediumBlue {
+    color: #0074b0;
+}
+.darkBlue {
+    color: #004162;
+}
+.black {
+    color: black;
+}
+.white {
+    color: white;
+}
+.tooLightGray {
+    color: #f0f0f0;
+}
+.lightGray {
+    color: #dbdbdb;
+}
+.mediumGray {
+    color: #666;
+}
+.darkGray {
+    color: #333;
+}
+.lightGreen {
+    color: #10d514;
+}
+.mediumGreen {
+    color: #0a700c;
+}
+.darkGreen {
+    color: #003300;
+}
+.lightRed {
+    color: #f65c4b;
+}
+.mediumRed {
+    color: #a82618;
+}
+.darkRed {
+    color: #520c04;
+}
+.yellow {
+    color: #e8e61f;
+}
+.pink {
+    color: #ec0172;
+}
+.tooLightGrayBg {
+    background: #F0F0F0;
+}
+.mediumBlackBg {
+    background: #414141;
+}
+.mediumGreenBg {
+    background: #278b27;
+}
+.mediumRedBg {
+    background: #c21b09;
+}
+/* Text Size
+--------------------------*/
+
+.fs10 {
+    font-size: 10px !important;
+}
+.fs11 {
+    font-size: 11px !important;
+}
+.fs12 {
+    font-size: 12px !important;
+}
+.fs13 {
+    font-size: 13px !important;
+}
+.fs14 {
+    font-size: 14px !important;
+}
+.fs16 {
+    font-size: 16px !important;
+}
+.fs18 {
+    font-size: 18px !important;
+}
+/******************************************************************
+ Overall Styles
+******************************************************************/
+/* Hide and seek
+--------------------------*/
+
+.hide {
+    display: none !Important;
+}
+.noVisibility {
+    visibility: hidden !Important;
+}
+/* Alignment
+--------------------------*/
+
+.alignCenter {
+    text-align: center;
+}
+.alignLeft {
+    text-align: left;
+}
+.alignRight {
+    text-align: right;
+}
+.floatRight {
+    float: right;
+}
+.floatLeft {
+    float: left;
+}
+/* Repsonsive
+--------------------------*/
+
+.desktopOnly {
+    display: none;
+}
+.tabletOnly {
+    display: none;
+}
+.mobileOnly {
+    display: none;
+}
+/* Etc
+--------------------------*/
+
+.beforeUL {
+    margin-bottom: 5px !Important;
+}
+.noBorder {
+    border: 0 !important;
+}
+.noMargin {
+    margin: 0 !Important;
+}
+.marginAuto {
+    margin: 0 auto !important;
+}
+.noPadding {
+    padding: 0 !important;
+}
+.noBullets {
+    list-style: none;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+area {
+    border: 0 !important;
+    outline: 0 !important;
+}
+.caption {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 3px;
+}
+.footnoteWrapper {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #f1f1f1;
+}
+.footnote {
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+.footnoteWrapper > p.footnote, .caption.spacing {
+    padding-left: 6px;
+}
+.footnoteWrapper > p.footnote > sup, .caption.spacing > sup {
+    margin-left: -7px;
+}
+.footnoteWrapper.longerSup > p.footnote {
+    padding-left: 0;
+}
+.footnoteWrapper.longerSup > p.footnote > sup {
+    margin-left: -7px;
+}
+/******************************************************************
+ Master Styles
+******************************************************************/
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-size: 13px;
+    background: white;
+    line-height: 1.5;
+    color: #666;
+}
+body.loginPage {
+    background: #f0f0f0;
+}
+*:focus {
+    outline: none;
+}
+.loading, #fancybox-loading div {
+    width: 90px;
+    height: 90px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1), 0px 0px 10px 2px rgba(0, 0, 0, .2), inset 0px -1px 0px 0px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1), 0px 0px 10px 2px rgba(0, 0, 0, .2), inset 0px -1px 0px 0px rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1), 0px 0px 10px 2px rgba(0, 0, 0, .2), inset 0px -1px 0px 0px rgba(0, 0, 0, .3);
+    position: fixed !important;
+    z-index: 9999;
+    top: 48% !important;
+    left: 38% !important;
+    margin-left: 90px;
+    background: #e7e8e8;
+    /* http://www.colorzilla.com/gradient-editor/#e0e0e0+0,ffffff+100;Custom */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, -moz-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6+ */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(224, 224, 224, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, -webkit-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, -o-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, -ms-linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* IE 10+ */
+    
+    background: url(../images/loadingCustom.gif) no-repeat center, linear-gradient(top, rgba(224, 224, 224, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* W3C */
+}
+.loading2 {
+    border: none;
+    padding: 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    opacity: 1;
+}
+.removeStylesLoading2 {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.quickSearchLink {
+    font-weight: 300;
+    font-size: .9em;
+    color: #F8F7F2;
+}
+.quickSearchLink:hover {
+    font-weight: 300;
+    font-size: .9em;
+    color: #29A8FF;
+}
+#uiLockId {
+    background-color: #272727 !important;
+    background-image: url(../images/ajax-loader.gif) 50% 50%;
+    background-repeat: no-repeat;
+}
+.headlineHR {
+    width: 87.4%;
+}
+/* Custom Webkit scrollbar
+--------------------------*/
+
+#fullWrapper.mini::-webkit-scrollbar, #quickSearch::-webkit-scrollbar, .markerSideScroller::-webkit-scrollbar {
+    width: 10px;
+}
+#fullWrapper.mini::-webkit-scrollbar-track, #quickSearch::-webkit-scrollbar-track, .markerSideScroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+#fullWrapper.mini::-webkit-scrollbar-track {
+    background: white;
+}
+#fullWrapper.mini::-webkit-scrollbar-thumb, #quickSearch::-webkit-scrollbar-thumb, .markerSideScroller::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(51, 51, 51, 1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+#fullWrapper.mini::-webkit-scrollbar-thumb:window-inactive, #quickSearch::-webkit-scrollbar-thumb:window-inactive, .markerSideScroller::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(51, 51, 51, 0.4);
+}
+/******************************************************************
+ Index Styles
+******************************************************************/
+
+#indexPreloader {
+    background: white;
+    padding: 7px;
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 65, 98, 1);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 65, 98, 1);
+    box-shadow: 0px 1px 0px 0px rgba(0, 65, 98, 1);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+/******************************************************************
+ Forms Wrapper
+******************************************************************/
+
+#wrapper {
+    min-height: 750px;
+    background: white;
+}
+#wrapper.row {
+    max-width: 100%;
+    min-height: 100%;
+}
+.loginBg {
+    background: none !important;
+}
+.col2 {
+    width: 445px;
+    float: left;
+}
+form {
+    margin-top: 15px;
+}
+label {
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: block;
+}
+textarea {
+    font-size: .9em;
+}
+textarea, input, select {
+    outline: none;
+    font-size: .9em;
+}
+select {
+    font-size: 1.0em;
+}
+sup {
+    font-size: .9em;
+    top: 0.4em;
+}
+sub {
+    top: -0.4em;
+}
+sub, sup {
+    line-height: 0
+}
+/* had to add this ONE style to control modify button on the employee center page */
+
+#updategroupsubmit {
+    font-size: 1em;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    margin: 0 2px 0 7px !important;
+    cursor: pointer;
+}
+/******************************************************************
+ Field Widths
+******************************************************************/
+
+.fieldWidth100 {
+    width: 100px;
+}
+.fieldWidth150 {
+    width: 150px;
+}
+.fieldWidth200 {
+    width: 200px;
+}
+.fieldWidth250 {
+    width: 250px;
+}
+.fieldWidth300 {
+    width: 300px;
+}
+.fieldWidth350 {
+    width: 350px;
+}
+.fieldWidth400 {
+    width: 400px;
+}
+.fieldWidth450 {
+    width: 450px;
+}
+.fieldWidth500 {
+    width: 500px;
+}
+/******************************************************************
+ Comments
+******************************************************************/
+
+.comment {
+    cursor: pointer;
+}
+/******************************************************************
+ Quick Search Styles
+******************************************************************/
+/* Favorite Quick Styles
+--------------------------*/
+
+.quickSearch {
+    color: #FFF;
+    font-weight: 300;
+    cursor: pointer;
+    text-shadow: 0px 1px #000 !important;
+    position: relative;
+}
+.quickSearch:before {
+    content: "";
+    background-image: url(../images/uiSprites.png);
+    background-repeat: no-repeat;
+    background-position: -333px -11px;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 5px;
+    top: 5px;
+}
+.activeLink .quickSearch:before {
+    background-position: -452px -171px !Important;
+}
+#favoriteLinks li:hover .quickSearch:before, #favoriteLinks .activeLink .quickSearch:before {
+    background-position: -333px -50px;
+}
+.sorry-quick {
+    padding: 20px 30px;
+    color: #aa240e;
+}
+/* Slide Content Styles
+--------------------------*/
+
+#fullWrapper {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+#fullWrapper.large {
+    overflow: hidden;
+}
+#fullWrapper.large #panel, #fullWrapper.large#favoriteLinks, #fullWrapper.large #wrapper, #fullWrapper.large #wrapper.row {
+    min-width: inherit;
+    max-width: inherit;
+    overflow: hidden;
+}
+#fullWrapper.large .row, #fullWrapper.large #mainMenu {
+    float: right;
+}
+#fullWrapper.mini {
+    min-width: 800px !important;
+}
+.fixedPage {
+    position: fixed;
+    width: 100%;
+    height: 100% !important;
+    z-index: 2;
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5), inset 0 0 95px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5), inset 0 0 95px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5), inset 0 0 95px rgba(0, 0, 0, 0.1);
+}
+.fixedPage.mini {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+.fixedPage #wrapper {
+    z-index: 2;
+}
+.fixedPage #quickSearchWrapper {}
+/* General Quick Search Styles
+--------------------------*/
+
+#quickSearchWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 100% !important;
+    z-index: 0;
+    /*  display: none;*/
+    
+    background: white;
+}
+/*#quickSearchWrapper.large {
+    -webkit-transition: width, .1s ease-in-out;
+    -moz-transition: width, .1s ease-in-out;
+    -o-transition: width, .1s ease-in-out;
+    transition: width, .1s ease-in-out;
+}
+#quickSearchWrapper.mini {
+    -webkit-transition: width, .67s ease-in-out;
+    -moz-transition: width, .67s ease-in-out;
+    -o-transition: width, .67s ease-in-out;
+    transition: width, .67s ease-in-out;
+}*/
+
+#quickSearchWrapper .shortcutText {
+    display: none;
+}
+#quickSearch {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+#quickSearch .ui-tabs-nav li a {
+    padding: .9em 1.3em .9em 2.6em;
+    position: relative;
+}
+#quickSearch .ui-tabs-nav li a:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    top: 9px;
+    left: 10px;
+}
+.quickSearchTop {
+    height: 60px;
+}
+.ui-dialog.ui-draggable.ui-resizable {
+    min-width: 700px;
+}
+#quickJob {
+    height: 550px !important;
+    overflow-x: hidden;
+    margin-top: 55px;
+    display: none;
+}
+#quickSearchWrapper .iconWrapper {
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    z-index: 5;
+}
+#quickSearchWrapper.large .ALTtips {
+    display: none;
+}
+#quickSearch .clearSelection {
+    margin-top: 16px;
+}
+#quickSearchWrapper.onlyLarge #miniSearchButton {
+    display: none !Important;
+}
+#quickSearchWrapper.onlyLarge .shortcutText {
+    right: 45px !Important;
+}
+#closeQuickButton, #largeSearchButton, #miniSearchButton, .closeButtonHeader, #quickSearchWrapper .ui-dialog-back {
+    position: relative;
+    right: 0;
+    top: -3px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 0 10px 0 0 !Important;
+    cursor: pointer;
+}
+#quickSearchWrapper .ui-dialog-back {
+    margin: 0 6px 0 0 !Important;
+}
+#quickSearchWrapper .ui-dialog-back span {
+    margin: 0;
+}
+#closeQuickButton {
+    background: url(../images/uiSprites.png) no-repeat -330px -212px;
+}
+#closeQuickButton:hover {
+    background: url(../images/uiSprites.png) no-repeat -330px -253px;
+}
+#largeSearchButton {
+    background: url(../images/uiSprites.png) no-repeat -369px -212px;
+}
+#largeSearchButton:hover {
+    background: url(../images/uiSprites.png) no-repeat -369px -253px;
+}
+#miniSearchButton {
+    background: url(../images/uiSprites.png) no-repeat -409px -212px;
+}
+#miniSearchButton:hover {
+    background: url(../images/uiSprites.png) no-repeat -409px -253px;
+}
+.faq-articles table {
+    margin-left: 10px;
+}
+.faq-articles {
+    list-style: none;
+}
+.titleSearch {
+    font-weight: bold;
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    margin-bottom: 5px !important;
+    font-size: 14px;
+}
+.dataSearch {
+    margin-top: 3px;
+}
+.quickDataSearch {
+    display: table-row;
+}
+.quickDataSearch:nth-child(odd) {
+    margin-right: 30px !Important;
+}
+.quickDataSearch:nth-child(even) {
+    background: #efefef;
+}
+/* Mini Styles
+--------------------------*/
+
+#quickSearchWrapper.mini {
+    width: 25.5%;
+}
+#quickSearchWrapper.mini .faq-articles li.quick-li {
+    padding-left: 4px;
+}
+#quickSearchWrapper.mini .shortcutText {
+    top: 28px;
+    right: 16px;
+    font-size: 10px;
+}
+#quickSearchWrapper.mini .shortcutText.secondLevel {
+    right: 16px !important;
+}
+#quickSearchWrapper.mini #quickSearchTitle {
+    padding: 10px 25px 7px;
+    color: white;
+    text-shadow: 0 1px #004162;
+    position: relative;
+    z-index: 2;
+}
+#quickSearchWrapper.mini #quickSearchTitle h3 {
+    width: 75%;
+}
+#quickSearchWrapper.mini .quickSearchTop input {
+    width: 95%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-nav {
+    width: auto;
+    padding: 0 0 0 6px;
+    margin: 0;
+    background: #dbdbdb;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-nav li {
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-nav li:hover {
+    background: #bebebe;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-nav .ui-state-active {
+    background: white !important;
+}
+#quickSearchWrapper.mini .ui-tabs-nav li a {
+    width: 100%;
+    display: block;
+    padding: .6em 0;
+}
+#quickSearchWrapper.mini .ui-tabs-nav li a span {
+    text-indent: -9999px;
+    padding: 0 !important;
+    display: block;
+}
+#quickSearchWrapper.mini .ui-tabs-nav li a span {
+    background: url(../images/uiSprites.png) no-repeat;
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+}
+/*#quickSearchWrapper.mini .iconWrapper {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    z-index: 5;
+}*/
+
+#quickSearchWrapper.mini .faq-articles li.quickDataSearch:nth-child(even) {
+    background: white !important;
+}
+#quickSearchWrapper.mini .quickDataWrapper {
+    padding: 0;
+}
+#quickSearchWrapper.mini .quickDataWrapper li.quick-li {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+#quickSearchWrapper.mini .quickDataWrapper li.quick-li:last-child {
+    margin-bottom: 22px !important;
+}
+#quickSearchWrapper.mini .quickDataWrapper div {
+    margin: 0 5px 0 5px;
+}
+/* Large Styles
+--------------------------*/
+
+#quickSearchWrapper.large {
+    width: 95%;
+}
+#quickSearchWrapper.large .shortcutText {
+    top: 15px;
+    right: 71px;
+}
+#quickSearchWrapper.large .shortcutText.secondLevel {
+    right: 103px !important;
+}
+#quickSearchWrapper.large #quickSearchTitle {
+    padding: 10px 25px 7px 17px;
+    color: white;
+    text-shadow: 0 1px #004162;
+    position: relative;
+    z-index: 2;
+}
+#quickSearchWrapper.large #quickSearchTitle h3 {
+    width: auto;
+}
+#quickSearchWrapper.large .quickSearchTop input {
+    width: 98.5%;
+    /*95.4%*/
+    
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#quickSearchWrapper.large .ui-tabs .ui-tabs-nav {
+    width: auto;
+    padding: 4px 0 0 28px;
+    margin: 0;
+    background: #dbdbdb;
+}
+#quickSearchWrapper.large .ui-tabs-nav li a:before {
+    background: url(../images/uiSprites.png) no-repeat;
+}
+#quickSearchWrapper.large .ui-tabs .ui-tabs-nav .ui-state-active {
+    background: white !important;
+}
+#quickSearchWrapper.large .ui-tabs .ui-tabs-nav li:hover {
+    background: #bebebe;
+}
+/*#quickSearchWrapper.large .iconWrapper {
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    z-index: 5;
+}*/
+
+#quickSearchWrapper.large .quickDataWrapper {
+    padding: 0 3px 0 29px;
+}
+#quickSearchWrapper.large .quickDataWrapper li.quick-li {
+    width: 14.7%;
+    float: left;
+    margin-bottom: 13px !important;
+}
+#quickSearchWrapper.large #clientsearchresultdata .quickDataWrapper li.quick-li {
+    width: 16.7%;
+}
+#quickSearchWrapper.large .quickDataWrapper li.quick-li div {
+    padding-right: 22px;
+}
+/* Quick Search Main Menu Styles
+--------------------------*/
+
+#fullWrapper.large .hideExtraText {
+    display: none;
+}
+#fullWrapper.large .menu .tabletSize, #fullWrapper.large .tabletSize .quickSearch, #fullWrapper.mini .menu .tabletSize, #fullWrapper.mini .tabletSize .quickSearch {
+    text-indent: -9999px;
+}
+#fullWrapper.large .tabletSize .quickSearch, #fullWrapper.mini .tabletSize .quickSearch {
+    padding-Left: 0 !important;
+    width: 26px;
+    /*13px*/
+}
+#fullWrapper.large .menu .firstcolumn, #fullWrapper.mini .menu .firstcolumn {
+    width: 210px !Important;
+}
+#fullWrapper.large .menu>li:nth-child(9) .firstcolumn, #fullWrapper.mini .menu>li:nth-child(9) .firstcolumn {
+    width: 220px !Important;
+}
+#fullWrapper.large .menu>li:nth-child(6) .firstcolumn, #fullWrapper.large .menu>li:nth-child(7) .firstcolumn, #fullWrapper.mini .menu>li:nth-child(6) .firstcolumn, #fullWrapper.mini .menu>li:nth-child(7) .firstcolumn {
+    width: 240px !Important;
+}
+#fullWrapper.large .menu .dropdown_5columns, #fullWrapper.mini .menu .dropdown_5columns {
+    width: 639px !important;
+}
+#fullWrapper.large .menu .dropdown_4columns, #fullWrapper.mini .menu .dropdown_4columns {
+    width: 530px;
+}
+#fullWrapper.large .menu .dropdown_3columns, #fullWrapper.mini .menu .dropdown_3columns {
+    width: 375px;
+}
+#fullWrapper.large .menu .dropdown_2columns, #fullWrapper.mini .menu .dropdown_2columns {
+    width: 240px;
+}
+#fullWrapper.large .menu li.nodrop > a, #fullWrapper.large .menu>li:nth-child(2), #fullWrapper.large .menu>li:nth-child(3), #fullWrapper.large .menu>li:nth-child(4), #fullWrapper.large .menu>li:nth-child(5), #fullWrapper.large .menu>li:nth-child(6), #fullWrapper.large .menu>li:nth-child(7), #fullWrapper.mini .menu li.nodrop > a, #fullWrapper.mini .menu>li:nth-child(2), #fullWrapper.mini .menu>li:nth-child(3), #fullWrapper.mini .menu>li:nth-child(4), #fullWrapper.mini .menu>li:nth-child(5), #fullWrapper.mini .menu>li:nth-child(6), #fullWrapper.mini .menu>li:nth-child(7) {
+    padding-left: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#fullWrapper.large .menu > li::before, #fullWrapper.mini .menu > li::before {
+    right: 14px;
+}
+#fullWrapper.large .menu > li:after, #fullWrapper.large .menu > li:hover:after, #fullWrapper.mini .menu > li:after, #fullWrapper.mini .menu > li:hover:after {
+    width: 30px;
+    height: 30px;
+    top: 11px;
+    left: 12px;
+}
+#fullWrapper.large .menu li.nodrop, #fullWrapper.mini .menu li.nodrop {
+    width: 52px;
+    margin-right: 10px;
+}
+/* Dashboard
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(1):after, #fullWrapper.mini .menu>li:nth-child(1):after {
+    background-position: -566px -6px;
+    left: 17px !Important;
+}
+#fullWrapper.large .menu>li:nth-child(1):hover:after, #fullWrapper.mini .menu>li:nth-child(1):hover:after {
+    background-position: -566px -45px;
+}
+.outstandingTotal {
+    text-align: right;
+    margin: -10px 10px 0 0 !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #666 !important;
+}
+.highcharts-container {
+    width: 100% !important;
+    margin: 0 auto;
+}
+/* Projects
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(2):after, #fullWrapper.mini .menu>li:nth-child(2):after {
+    background-position: -606px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(2):hover:after, #fullWrapper.mini .menu>li:nth-child(2):hover:after {
+    background-position: -606px -45px;
+}
+/* Time
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(3):after, #fullWrapper.mini .menu>li:nth-child(3):after {
+    background-position: -646px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(3):hover:after, #fullWrapper.mini .menu>li:nth-child(3):hover:after {
+    background-position: -646px -45px;
+}
+/* Invoicing
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(4):after, #fullWrapper.mini .menu>li:nth-child(4):after {
+    background-position: -686px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(4):hover:after, #fullWrapper.mini .menu>li:nth-child(4):hover:after {
+    background-position: -686px -45px;
+}
+/* Timecard
+--------------------------*/
+
+#fullWrapper.large .timeCard .box-table input.catinput, #fullWrapper.mini .timeCard .box-table input.catinput {
+    width: 97.8% !Important;
+}
+/* Clients
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(5):after, #fullWrapper.mini .menu>li:nth-child(5):after {
+    background-position: -726px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(5):hover:after, #fullWrapper.mini .menu>li:nth-child(5):hover:after {
+    background-position: -726px -45px;
+}
+/* Employees
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(6):after, #fullWrapper.mini .menu>li:nth-child(6):after {
+    background-position: -766px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(6):hover:after, #fullWrapper.mini .menu>li:nth-child(6):hover:after {
+    background-position: -766px -45px;
+}
+/* Setup
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(7):after, #fullWrapper.mini .menu>li:nth-child(7):after {
+    background-position: -806px -6px;
+}
+#fullWrapper.large .menu>li:nth-child(7):hover:after, #fullWrapper.mini .menu>li:nth-child(7):hover:after {
+    background-position: -806px -45px;
+}
+/* All Reports
+--------------------------*/
+
+#fullWrapper.large .menu>li:nth-child(8):after, #fullWrapper.mini .menu>li:nth-child(8):after {
+    background-position: -840px -4px;
+}
+#fullWrapper.large .menu>li:nth-child(8):hover:after, #fullWrapper.mini .menu>li:nth-child(8):hover:after {
+    background-position: -840px -45px;
+}
+#fullWrapper.large #firstLinks .shortcutText, #fullWrapper.mini #firstLinks .shortcutText {
+    position: relative;
+    right: 0 !important;
+    margin-top: 1px;
+}
+/* Tabs Styles
+--------------------------*/
+
+#fullWrapper.large #contentWrapper .ui-tabs .ui-tabs-nav li a, #fullWrapper.mini #contentWrapper .ui-tabs .ui-tabs-nav li a {
+    width: 110px !important;
+    /*89px*/
+    
+    text-align: center;
+    padding: .8em 1em !Important;
+    white-space: normal !important;
+    line-height: 1.5em !important;
+}
+#fullWrapper.large .headlineHR, #fullWrapper.mini .headlineHR {
+    width: 83.4%;
+}
+#fullWrapper.large #taskHRStotalsWrapper, #fullWrapper.mini #taskHRStotalsWrapper {
+    width: 83%;
+}
+/******************************************************************
+ Quick Search Styles - Level 1
+******************************************************************/
+
+#quickSearchWrapper.mini #quickSearchNavV1.ui-tabs-nav li {
+    width: 25%;
+    cursor: pointer;
+}
+#quickSearchWrapper.mini #quickSearchNavV1.ui-tabs-nav li a span {
+    left: 35% !important;
+    cursor: pointer;
+}
+#quickSearchWrapper.mini a#searchProjectLink span, #quickSearchWrapper.large a#searchProjectLink:before {
+    background-position: -570px -88px;
+}
+#quickSearchWrapper.mini a#searchClientsLink span, #quickSearchWrapper.large a#searchClientsLink:before {
+    background-position: -609px -88px;
+}
+#quickSearchWrapper.mini a#searchInvoicesLink span, #quickSearchWrapper.large a#searchInvoicesLink:before {
+    background-position: -650px -88px;
+}
+#quickSearchWrapper.mini a#searchEmployeesLink span, #quickSearchWrapper.large a#searchEmployeesLink:before {
+    background-position: -688px -88px;
+}
+#quickSearchWrapper.mini a#searchTimesheetsLink span, #quickSearchWrapper.large a#searchTimesheetsLink:before {
+    background-position: -730px -88px;
+    top: 9px;
+    height: 26px;
+}
+.onlyCreateInvoice {
+    display: none;
+}
+#quickSearchWrapper.mini a#billingItemsLink span, #quickSearchWrapper.large a#billingItemsLink:before {
+    background-position: -769px -88px;
+    top: 9px;
+    width: 22px;
+    height: 26px;
+}
+#projectsearchresultdata, #clientsearchresultdata, #invoicesearchresultdata, #employeessearchresultdata, #PStabs .faq-articles {
+    display: table;
+    width: 100%;
+}
+/* Mini Styles
+--------------------------*/
+
+#quickSearchWrapper .ALTtips {
+    top: 54px !important;
+}
+#quickSearchWrapper.mini .noResults {
+    margin: 5px 0 0 0;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-panel {
+    padding: 1.2em 0em 1em 0em;
+}
+#quickSearchWrapper.mini .faq-articles li.quick-li, #quickSearchWrapper.mini .noResults {
+    list-style: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+#quickSearchWrapper.mini .faqsearchinputbox, #quickSearchWrapper.mini #billingItemData .noInfo {
+    width: 87%;
+    margin: 0 0 0 20px;
+}
+/* Mini Styles
+--------------------------*/
+
+#tabs-5 .quickDataWrapper {
+    padding: 0 !important;
+}
+#tabs-5 .quickDataSearch {
+    margin: 1px 0 0 !important;
+}
+#tabs-5 .linkField {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#tabs-5 .quickDataWrapper li {
+    float: none !important;
+}
+#tabs-5 .dataSearch {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#tabs-5 a {
+    display: block;
+    color: #666;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    padding: 15px 32px;
+    border-bottom: 1px solid rgba(219, 218, 218, .5);
+    border-top: 1px solid rgba(251, 250, 250, .3);
+    position: relative;
+}
+#tabs-5 a:hover {
+    background: #dbdbdb;
+}
+/* Large Styles
+--------------------------*/
+
+#quickSearchWrapper.large .noResults {
+    margin: 10px 10px 0 28px;
+}
+#quickSearchWrapper.large .faq-articles li.quick-li {
+    list-style: none;
+    padding: 20px 0 5px;
+    margin-bottom: 10px;
+}
+#quickSearchWrapper.large .faqsearchinputbox, #quickSearchWrapper.large #billingItemData .noInfo {
+    width: 94%;
+    margin: 0 auto;
+}
+#quickSearchWrapper.large #tabs-5 a {
+    padding: 20px 32px;
+}
+/* Quick Search Project Tab Styles
+--------------------------*/
+
+.projectNumberClick {
+    cursor: pointer;
+}
+.projectNumberClick:hover {
+    color: #004162;
+}
+#quickSearchWrapper.large .moreinfoField {
+    width: auto !important;
+    position: relative;
+}
+#quickSearchWrapper.large .invOption {
+    margin-right: 10px;
+}
+#quickSearchWrapper .qs-options-menu {
+    padding: 0 !important;
+}
+#quickSearchWrapper .qs-options-menu li {
+    width: 100%;
+    margin: 0 !important;
+}
+#quickSearchWrapper.mini .moreinfoField {
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+#quickSearchWrapper.mini .invOption {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#quickSearchWrapper.mini .qs-options-menu {
+    position: absolute;
+    top: 29px;
+    right: 5px;
+}
+#quickSearchWrapper.mini .projectTitle {
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+#quickSearchWrapper.mini #tasksearchresultdata .subtaskField {
+    background: #f7f5f5 !important;
+}
+#quickSearchWrapper.mini .projectTitle {
+    margin: 0 !important;
+    font-size: 15px;
+}
+#quickSearchWrapper.large .projectField {
+    width: 29.7% !important;
+}
+#quickSearchWrapper.large .projectTitle {
+    float: left;
+    width: 100%;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    padding-right: 0 !important;
+}
+#quickSearchWrapper #optionsField {
+    display: none !important;
+}
+#quickSearchWrapper.mini .projectField, #quickSearchWrapper.mini #clientsearchresultdata .clientField, #quickSearchWrapper.mini #invoicesearchresultdata .invoiceField, #quickSearchWrapper.mini #employeessearchresultdata .employeeField, #quickSearchWrapper.mini #informationsearchresultdata .mainContactField, #quickSearchWrapper.mini #invoiceprojectsearchresultdata .invoiceNumberField, #quickSearchWrapper.mini #tasksearchresultdata .taskField, #quickSearchWrapper.mini #tasksearchresultdata .subtaskField, #quickSearchWrapper.mini #client2searchresultdata .clientField, #quickSearchWrapper.mini #billingItemData .titleField, #quickSearchWrapper.mini #optionsField {
+    background: #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0 !important;
+    font-size: 15px;
+}
+#quickSearchWrapper.mini .projectTitle, #quickSearchWrapper.mini #clientsearchresultdata .clientField .titleSearch, #quickSearchWrapper.mini #invoicesearchresultdata .invoiceField .titleSearch, #quickSearchWrapper.mini #employeessearchresultdata .employeeField .titleSearch, #quickSearchWrapper.mini #informationsearchresultdata .mainContactField .titleSearch, #quickSearchWrapper.mini #invoiceprojectsearchresultdata .invoiceNumberField .titleSearch, #quickSearchWrapper.mini #tasksearchresultdata .taskField .titleSearch, #quickSearchWrapper.mini #tasksearchresultdata .subtaskField .titleSearch, #quickSearchWrapper.mini #optionsField .titleSearch {
+    width: 80%;
+    padding-right: 0 !important;
+}
+#quickSearchWrapper.mini .projectTitle .titleSearch, #quickSearchWrapper.mini #clientsearchresultdata .clientField .titleSearch, #quickSearchWrapper.mini #invoicesearchresultdata .invoiceField .titleSearch, #quickSearchWrapper.mini #employeessearchresultdata .employeeField .titleSearch, #quickSearchWrapper.mini #informationsearchresultdata .mainContactField .titleSearch, #quickSearchWrapper.mini #invoiceprojectsearchresultdata .invoiceNumberField .titleSearch, #quickSearchWrapper.mini #tasksearchresultdata .taskField .titleSearch, #quickSearchWrapper.mini #tasksearchresultdata .subtaskField .titleSearch, #quickSearchWrapper.mini #optionsField .titleSearch {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* Quick Search Project Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #projectsearchresultdata .managerField {
+    width: 20% !important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .clientField {
+    width: 18% !important;
+}
+#quickSearchWrapper.mini #projectsearchresultdata .managerField {
+    padding-top: 5px !important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .addressField {
+    width: 21% !important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .dueField {
+    width: 10% !important;
+    padding-right: 0 !important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .dueField div {
+    padding-right: 0 !important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .customField, #quickSearchWrapper.large #informationsearchresultdata .customField {
+    width: 97% !Important;
+}
+#quickSearchWrapper.large #projectsearchresultdata .customField .titleSearch, #quickSearchWrapper.large #projectsearchresultdata .customField .col.last, #quickSearchWrapper.large #informationsearchresultdata .customField .col.last {
+    padding-left: 30px !Important;
+}
+#quickSearchWrapper #projectsearchresultdata .customField .col, #quickSearchWrapper #informationsearchresultdata .customField .col {
+    float: left;
+    margin-left: 0;
+    margin-right: 15px;
+    width: 40%;
+}
+/* Quick Search Client Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #clientsearchresultdata .clientField {
+    width: 14.7% !important;
+}
+#quickSearchWrapper.large #clientsearchresultdata .billingAddressField {
+    width: 16.4%;
+}
+#quickSearchWrapper.large #clientsearchresultdata .billingAddressField div {
+    padding-right: 0 !important;
+}
+#quickSearchWrapper.large #clientsearchresultdata .mainContactField {
+    width: 98% !important;
+}
+#quickSearchWrapper.mini #clientsearchresultdata .officeField {
+    padding-top: 5px !important;
+}
+/* Quick Search Invoice Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #invoicesearchresultdata .quickDataWrapper li {
+    width: 27.3%;
+}
+#quickSearchWrapper.large #invoicesearchresultdata .dateField {
+    width: 15.7% !important;
+}
+#quickSearchWrapper.large #invoicesearchresultdata .statusField {
+    width: 10% !important;
+    padding-right: 0 !important;
+}
+#quickSearchWrapper.mini #invoicesearchresultdata .invoiceField {
+    padding-top: 5px !important;
+}
+/* Quick Search Employee Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #employeessearchresultdata .employeeField, #quickSearchWrapper.large #employeessearchresultdata .mainContactField {
+    width: 25% !Important;
+}
+#quickSearchWrapper.large #employeessearchresultdata .phoneField {
+    width: 15.7% !important;
+}
+#quickSearchWrapper.mini #invoicesearchresultdata .invoiceField {
+    padding-top: 5px !important;
+}
+/******************************************************************
+ Quick Search Styles - Level 2
+******************************************************************/
+
+#quickSearchWrapper.mini #quickSearchNavV2.ui-tabs-nav li {
+    width: 20%;
+}
+#quickSearchWrapper.mini #quickSearchNavV2.ui-tabs-nav li a span {
+    left: 18px !important;
+}
+#quickSearchWrapper.mini a#searchInfoLink span, #quickSearchWrapper.large a#searchInfoLink:before {
+    background-position: -809px -88px;
+}
+#quickSearchWrapper.mini a#searchTaskLink span, #quickSearchWrapper.large a#searchTaskLink:before {
+    background-position: -851px -88px;
+}
+#quickSearchWrapper.mini a#searchInvoicesProjectLink span, #quickSearchWrapper.large a#searchInvoicesProjectLink:before {
+    background-position: -888px -88px;
+}
+#quickSearchWrapper.mini a#searchLocationLink span, #quickSearchWrapper.large a#searchLocationLink:before {
+    background-position: -930px -88px;
+}
+#quickSearchWrapper.mini a#optionsLocationLink span, #quickSearchWrapper.large a#optionsLocationLink:before {
+    background-position: -969px -87px;
+}
+#quickSearchWrapper.mini #PStabs #quickSearch {
+    overflow: visible !Important;
+}
+#quickSearchWrapper.large #quickSearchTitle h3.secondLevel {
+    width: 70%;
+}
+/*#quickSearchWrapper.mini #quickSearchTitle h3.secondLevel {
+    width: 59%;
+}*/
+
+#quickSearch .ui-tabs .ui-tabs-panel {
+    background: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#quickSearchWrapper.large .ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+#quickSearchWrapper.mini .ui-tabs .ui-tabs-panel {
+    padding: 0 !important;
+    min-height: 240px;
+}
+#ajaxContentQS {
+    height: 100%;
+}
+#quickSearchWrapper.large .faqsearchinputbox, #quickSearchWrapper.large #billingItemData .noInfo {
+    margin-top: 10px !important;
+}
+#quickSearchWrapper.mini .faqsearchinputbox, #quickSearchWrapper.mini #billingItemData .noInfo {
+    width: 86%;
+    margin: 1.2em 0 0 19px;
+}
+.quickSearchTop ul {
+    list-style: none;
+}
+.quickSearchTop ul li {
+    float: left;
+}
+.quickSearchTop ul li.inputLI {
+    width: 90%;
+}
+.quickSearchTop ul li.imgLI {
+    width: 10%;
+}
+/* Quick Search Information Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #informationsearchresultdata .quickDataWrapper li {
+    width: 32.6%;
+}
+#quickSearchWrapper.large #invoiceprojectsearchresultdata li {
+    width: 19.7%;
+}
+#quickSearchWrapper.large #tasksearchresultdata li {
+    width: 18.9%;
+}
+/* Quick Search Task Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #tabs-5 li {
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+#quickSearchWrapper.large #tasksearchresultdata .hrsField {
+    width: 19.9% !important;
+}
+#quickSearchWrapper.large #tasksearchresultdata .taskField {
+    width: 77% !important;
+}
+#quickSearchWrapper.large #tasksearchresultdata .subtaskField {
+    width: 74.2% !important;
+    padding-left: 2.5%;
+}
+#tasksearchresultdata .subtaskField {
+    position: relative;
+}
+#quickSearchWrapper.large #tasksearchresultdata .subtaskField, #quickSearchWrapper.large #tasksearchresultdata .SUB {
+    padding-top: 4px !important;
+}
+#quickSearchWrapper.mini #tasksearchresultdata .subtaskField, #quickSearchWrapper.mini #tasksearchresultdata .SUB {
+    padding-left: 22px !important;
+}
+#quickSearchWrapper.mini #tasksearchresultdata li.subtaskField div, #quickSearchWrapper.mini #tasksearchresultdata .SUB div {
+    margin-left: 20px;
+}
+#quickSearchWrapper.mini #tasksearchresultdata .quickDataSearch {
+    margin-bottom: 0 !important;
+    padding: 0 !Important;
+}
+#quickSearchWrapper.mini #tasksearchresultdata .statusField {
+    margin-bottom: 20px !Important;
+}
+.subtaskField:before {
+    content: "";
+    background: url(../images/uiSprites.png);
+    display: block;
+}
+#quickSearchWrapper.large .subtaskField:before {
+    top: -8px;
+    left: 0;
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: -324px -165px;
+}
+#quickSearchWrapper.mini .subtaskField:before {
+    top: 2px;
+    width: 15px;
+    height: 21px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: -325px -177px;
+}
+#quickSearchWrapper.large #tasksearchresultdata .billingField {
+    width: 36.6% !important;
+    padding-top: 0;
+}
+#quickSearchWrapper.large #tasksearchresultdata .statusField, #quickSearchWrapper.large #tasksearchresultdata .dateField {
+    width: 20% !important;
+    padding-top: 0;
+}
+#quickSearchWrapper.large #tasksearchresultdata .dateField.SUB.one {
+    padding-left: 2.5%;
+}
+#quickSearchWrapper.large #tasksearchresultdata .dateField.SUB {
+    width: 37% !important;
+}
+#quickSearchWrapper.large #tasksearchresultdata .statusField div {
+    padding-right: 0 !important;
+}
+#tabs-4.ui-tabs-hide {
+    display: block !important;
+    position: fixed;
+    left: -10000px;
+    width: 100%;
+    height: auto;
+}
+#quickSearchWrapper.large #mapQS {
+    width: 100%;
+    height: 470px;
+    margin: 0 auto 0;
+}
+#quickSearchWrapper.mini #mapQS {
+    width: 100%;
+    height: 470px;
+    margin: 1px 0 0 1px;
+}
+#quickSearchWrapper .gmnoprint img {
+    max-width: none;
+}
+/* Quick Search Client Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #client2searchresultdata li.clientField, #quickSearchWrapper.large #client2searchresultdata li.officeField {
+    width: 48% !important;
+}
+#quickSearchWrapper.large #client2searchresultdata li.phoneField, #quickSearchWrapper.large #client2searchresultdata li.faxField, #quickSearchWrapper.large #client2searchresultdata li.addressField, #quickSearchWrapper.large #client2searchresultdata li.billingAddressField {
+    width: 23.9% !important;
+}
+#quickSearchWrapper.large #client2searchresultdata li.mainContactField {
+    width: 95.2% !important;
+}
+/* Quick Search Options Tab Styles
+--------------------------*/
+
+#quickSearchWrapper.large #tabs-5 #optionsField {
+    width: 97%;
+    margin-bottom: 0 !Important;
+}
+#quickSearchWrapper.large #tabs-5 #dateField {
+    width: 18.7%;
+}
+/******************************************************************
+ Buttons
+******************************************************************/
+
+.fallr-button {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+/******************************************************************
+ Messages
+******************************************************************/
+
+form .error, .ui-state-default.tabError, .error {
+    background: rgba(168, 38, 24, .2) !important;
+    border: 1px solid #a82618;
+}
+form .error, .ui-state-default.tabError a, .error {
+    color: #a82618;
+}
+p.error {
+    padding: 10px;
+}
+form select.error {
+    background: rgba(168, 38, 24, .2) url(../images/selectIcon.png) right no-repeat !Important;
+}
+#message {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 6000;
+}
+.info, .success, .warning, .errors, .validation {
+    padding: 18px 60px;
+    text-align: center;
+    z-index: 300;
+}
+.messageCentered {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+.messageCentered .error {
+    color: white !important;
+    background: none !important;
+    border: none;
+}
+.loginPage .errors {
+    padding: 18px 0px;
+}
+.info {
+    color: #666;
+    /* http://www.colorzilla.com/gradient-editor/#ffffff+0,e0e0e0+100;Custom */
+    
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(224, 224, 224, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    /* W3C */
+}
+.info:after {
+    content: "";
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -92px -212px;
+    width: 19px;
+    height: 19px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    z-index: 200;
+    margin-top: -9px;
+}
+.info:hover:after {
+    background: url(../images/uiSprites.png) no-repeat -92px -253px;
+}
+.success ul li, .success ol li, .warning ol li, .errors ol li, .validation ol li, .warning ul li, .errors ul li, .validation ul li {
+    list-style: none;
+}
+#message .success li, #message .warning li, #message .errors li, #message .validation li, #message .warning li, #message .errors li, #message .validation li {
+    margin-bottom: 0 !important;
+    list-style: inside;
+}
+.success {
+    border-top: 1px solid #b4ffb5;
+    border-bottom: 1px solid #066308;
+    color: white;
+    text-shadow: 0 1px #066308;
+    /* http://www.colorzilla.com/gradient-editor/#49fa4c+0,0a700c+100;Custom */
+    
+    background: -moz-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(73, 250, 76, 1)), color-stop(100%, rgba(10, 112, 12, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(to bottom, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* W3C */
+}
+.info:hover, .success:hover, .warning:hover, .errors:hover {
+    cursor: pointer;
+}
+.success:hover {
+    /* http://www.colorzilla.com/gradient-editor/#49fa4c+0,003300+100;Custom */
+    
+    background: -moz-linear-gradient(top, #49fa4c 0%, #003300 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #49fa4c), color-stop(100%, #003300));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #49fa4c 0%, #003300 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, #49fa4c 0%, #003300 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, #49fa4c 0%, #003300 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(to bottom, #49fa4c 0%, #003300 100%);
+    /* W3C */
+}
+.success:after {
+    content: "";
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -10px -212px;
+    width: 19px;
+    height: 19px;
+    float: right;
+    position: absolute;
+    top: 36%;
+    right: 13px;
+    z-index: 200;
+}
+.success:hover:after {
+    background: url(../images/uiSprites.png) no-repeat -10px -253px;
+}
+.warning, .errors {
+    border-top: 1px solid #d77f76;
+    border-bottom: 1px solid #57140d;
+    color: white;
+    text-shadow: 0 1px #57140d;
+    /* http://www.colorzilla.com/gradient-editor/#c03627+0,a82618+49,891f14+100;Custom */
+    
+    background: -moz-linear-gradient(top, rgba(192, 54, 39, 1) 0%, rgba(168, 38, 24, 1) 49%, rgba(137, 31, 20, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(192, 54, 39, 1)), color-stop(49%, rgba(168, 38, 24, 1)), color-stop(100%, rgba(137, 31, 20, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(192, 54, 39, 1) 0%, rgba(168, 38, 24, 1) 49%, rgba(137, 31, 20, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(192, 54, 39, 1) 0%, rgba(168, 38, 24, 1) 49%, rgba(137, 31, 20, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(192, 54, 39, 1) 0%, rgba(168, 38, 24, 1) 49%, rgba(137, 31, 20, 1) 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(top, rgba(192, 54, 39, 1) 0%, rgba(168, 38, 24, 1) 49%, rgba(137, 31, 20, 1) 100%);
+    /* W3C */
+}
+.errors .messageCentered {
+    text-align: left;
+}
+.warning:hover, .errors:hover {
+    /* http://www.colorzilla.com/gradient-editor/#c03627+0,490000+100;Custom */
+    
+    background: -moz-linear-gradient(top, #c03627 0%, #490000 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c03627), color-stop(100%, #490000));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #c03627 0%, #490000 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, #c03627 0%, #490000 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, #c03627 0%, #490000 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(to bottom, #c03627 0%, #490000 100%);
+    /* W3C */
+}
+.warning:after, .errors:after {
+    content: "";
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -51px -212px;
+    width: 19px;
+    height: 19px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    z-index: 200;
+    margin-top: -9px;
+}
+.warning:hover:after, .errors:hover:after {
+    background: url(../images/uiSprites.png) no-repeat -51px -253px;
+}
+.noClose.errors:after, .noClose.errors:hover:after {
+    background: none !important;
+}
+/******************************************************************
+ Sidebar
+******************************************************************/
+
+#sidebar {
+    border: 1px solid white;
+    width: 250px;
+    height: 210px;
+    position: fixed;
+    background: #272727;
+    padding: 8px;
+    left: -235px;
+    margin-top: -110px;
+    top: 50%;
+    vertical-align: middle;
+    border-radius: 2px;
+    color: white;
+    -moz-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    z-index: 5000;
+}
+#sidebar.expand {
+    border: 1px solid white;
+    width: 700px;
+    height: 650px;
+    position: fixed;
+    background: #272727;
+    padding: 10px;
+    left: -10px;
+    margin-top: -325px;
+    top: 50%;
+    vertical-align: middle;
+    border-radius: 2px;
+    color: white;
+    -moz-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    z-index: 5000;
+}
+#kayakoWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+}
+#kayakoWrapper table {
+    display: inline-block;
+    margin-left: 3px;
+    height: 13px;
+}
+#kayakoWrapper a {
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+}
+/******************************************************************
+ Project Setup Styles
+******************************************************************/
+
+#projectNumber, #projectNumber:hover, #projectNumber:focus {
+    width: auto;
+    background: none;
+    float: none;
+    border: none;
+    border-radius: 0;
+    font-size: 1.0em;
+    padding: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#projectDescription {
+    height: 290px;
+}
+#map_canvas {
+    border: 1px solid #CCC;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 15px;
+}
+.tencol.map {
+    width: 86.3% !important;
+}
+/******************************************************************
+ Task Styles / Billing Styles
+******************************************************************/
+
+.taskTable {
+    width: 100%;
+}
+/* Testing these styles */
+
+#projectSetupTabs #tabThree {
+    /*  width: 115%;*/
+}
+#projectSetupTabs #tabThree #tasks {
+    /*  width: 90%;*/
+    
+    margin-left: 10px;
+}
+/* END Testing these styles */
+
+#tasks .taskWrapper, #billTasks ol {
+    padding-top: 4px;
+    padding-bottom: 3px;
+    margin-left: -155px;
+    padding-left: 154px;
+}
+#tasks div:nth-child(even), #billTasks tr:nth-child(even) ol, #billTasks tr:nth-child(even) ol {
+    background-color: #f8f8f8;
+    -moz-box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, .08);
+    box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, .08);
+}
+#tasks div:nth-child(even) input, #billTasks .jsAdded:nth-child(even) ol input {
+    color: #333;
+    text-shadow: none !important;
+}
+#tasks div:nth-child(even) input::-webkit-input-placeholder {
+    color: #333;
+}
+#tasks div:nth-child(even) input:-moz-input-placeholder {
+    color: #333;
+}
+#tasks .dateWrapper:after {
+    left: 72% !important;
+}
+#tasks td {
+    padding: 10px 2.3% 10px 0;
+    float: left;
+}
+.taskNameTD input {
+    /*  width:89%;
+*/
+}
+.taskHRSTD input {
+    /*  width: 63%;
+*/
+}
+.taskDateOneTD input, .taskDateTwoHRSTD input {
+    /*  width: 73%;
+*/
+}
+.taskNameTD {
+    width: 23%;
+}
+.taskHRSTD {
+    width: 10%;
+}
+.taskDateOneTD, .taskDateTwoHRSTD {
+    width: 14%;
+}
+.taskBtnsTD {
+    width: 20%;
+    padding-right: 0 !Important;
+}
+input[type=image].addNewTask, input[type=image].addSubtask {
+    margin-right: 2.5% !Important;
+}
+input[type=image].addNewTask, input[type=image].deleteNewTask, input[type=image].addSubtask, input[type=image].deleteSubSpacer {
+    width: auto;
+    display: block;
+}
+input[type=image].deleteNewTask, input[type=image].deleteSubSpacer {
+    padding: 6px 7px 7px !important;
+}
+input[type=image].addNewTask, input[type=image].addSubtask {
+    padding: 6px 7px 7px !important;
+}
+.addNewTaskWrapper, .deleteSubSpacerWrapper, .deleteNewTaskWrapper, .addSubtaskWrapper {
+    float: none;
+    display: inline-block;
+    position: relative;
+}
+.subtaskWrapper {
+    position: relative;
+    padding-left: 15%;
+}
+.subtaskWrapper:before {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -324px -165px;
+    display: block;
+    top: -14px;
+    left: 0;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+}
+.subtaskNameTD {
+    width: 23%;
+    padding-right: 3.4%;
+}
+.subtaskInput {
+    /*  width: 87%;
+*/
+}
+.subtaskBtnsTD {
+    width: 14%;
+}
+#taskHRStotalsWrapper {
+    text-align: right;
+    /*  width: 87%;*/
+    
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#taskHRStotals {
+    font-weight: bold;
+    font-size: 17px;
+}
+/******************************************************************
+ Billing Styles
+******************************************************************/
+
+#billTasks {
+    width: 105%;
+}
+.billTaskClear {
+    float: none !Important;
+    margin-bottom: 0 !important;
+}
+#billTasks ol, #billTasksEditMode ol {
+    list-style: none;
+}
+#billTasks li, #billTasksEditMode li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+#billTasks label, #billTasksEditMode label {
+    text-align: left;
+}
+#billTasks label, #billTasks select, #billTasks input, #billTasksEditMode label, #billTasksEditMode select, #billTasksEditMode input {
+    float: left;
+}
+#billTasks tr, #billTasksEditMode tr {
+    height: 45px;
+}
+.billingLabel {
+    width: 100%;
+}
+#billTasks .taskNameInput, #billTasksEditMode .taskNameInput {
+    /*  width: 89%;
+*/
+}
+.typeRating {
+    width: 20%;
+}
+#billTasks .rate.currency, #billTasksEditMode .rate.currency, .typeSchedule select {
+    /*  width: 77%;
+*/
+}
+#billTasks .typeLabel {
+    width: 30%;
+}
+#billTasks .typeBilling {
+    min-width: 222px;
+    width: 25%;
+    margin-left: 10px;
+}
+.billingOption {
+    /*  width: 100%;
+*/
+}
+.typeSchedule {
+    width: 25%;
+}
+.schedule {
+    width: 100%;
+}
+/******************************************************************
+ Employee Center Styles
+******************************************************************/
+
+#contentWrapper #showPermission button {
+    margin-bottom: 13px;
+}
+/******************************************************************
+ Site Settings
+******************************************************************/
+
+#userPermissionDivID td {
+    padding: 0 0 7px 2px;
+}
+#siteSettingsTabs .ui-tabs-panel.ui-widget-content .fivecol {
+    padding-top: 0 !important;
+}
+#siteSettingsSaveWrapper button {
+    float: right;
+}
+h3.withComment span {
+    display: inline;
+    font-size: 14px;
+}
+h3.withComment span img {
+    margin-top: -7px !important;
+}
+#copyMailAddress, #copyofficeAddress {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+/******************************************************************
+ Timecard Styles
+******************************************************************/
+
+.billableTimeRow {
+    border: 1px solid #a82618;
+    background: #eaeaea;
+    height: 35px;
+}
+.billableTimeRow td {
+    padding: 10px !important;
+}
+#entryText {
+    display: none;
+}
+.timecardButton {
+    width: 16px;
+    height: 17px;
+    float: left;
+    margin: 0 1px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px;
+    padding: 0;
+    box-shadow: none;
+}
+.timecardButton.plusButton {
+    margin-left: 1px !important;
+}
+.timecardButton.plusButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -453px -92px;
+}
+.timecardButton.closeButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -493px -92px;
+}
+.timecardButton.duplicateButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/uiSprites.png) no-repeat -533px -92px;
+}
+.detail {
+    position: absolute;
+    margin-top: 8px !Important;
+    margin-left: -250px !Important;
+    opacity: 1;
+}
+.detail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 257px;
+    width: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: #0074b0 transparent;
+}
+.detail2 {
+    position: absolute;
+    margin-top: 8px !Important;
+    opacity: 1;
+    z-index: 1000;
+    width: 635px;
+}
+.detail2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: #0074b0 transparent;
+}
+.closeSearch {
+    float: right;
+    margin-top: -13px;
+    margin-right: -14px;
+    cursor: pointer;
+}
+.closeDetails, .closeTaskCombo, .closeSearch {
+    margin: 10px !important;
+    position: absolute;
+    right: 1px;
+    top: 9px;
+}
+#box-table-a {
+    text-align: left;
+    border-collapse: collapse;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#box-table-a th {
+    padding: 10px;
+    background: #f5f5f6;
+    border-top: 4px solid #666;
+    font-size: 11px;
+    font-weight: bold;
+}
+#box-table-a td {
+    padding: 8px;
+    background: none;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid transparent;
+}
+.timeCard #save {
+    margin-left: 10px;
+}
+.timeCard .detail, .timeCard .detail2 {
+    /* See the '#tlyPageGuideWrapper .tlypageguide_toggle' class in the jquery-ui-1.8.16.custom.css file for additional styling */
+    
+    z-index: 4;
+}
+/******************************************************************
+ Focus Classes
+******************************************************************/
+
+.box-table tr.trnmfocus td, .box-table tr.trnmfocus td.holiday {
+    background: #efefef url(../images/timecard/timecardRowHover.png) bottom repeat-x;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 35px;
+}
+/******************************************************************
+ 1. Taskcalendar
+******************************************************************/
+
+.timeCard .taskselector {
+    /* Check '.timcardSubtasks', '.timeCard #box-table-ab .detailsearch' and '.timeCard .taskselector' in master.css */
+    
+    float: left;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
+    margin: 1px;
+    background: white;
+}
+.timeCard .taskselector ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 22px;
+}
+.timeCard .taskselector ul li:hover, .timeCard .taskselector ul li.active:hover {
+    background: #0074b0;
+    color: #FFF;
+    text-shadow: none;
+}
+.timeCard .taskselector ul li {
+    list-style: none;
+    margin: 0;
+    padding: 2px 9px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+}
+.timeCard .taskselector ul li.active {
+    color: #FFF;
+    text-shadow: none;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+}
+.timeCard .taskselector ul li.empty.active {
+    background-color: #555;
+    padding-left: 5px;
+}
+.timeCard .taskselector > div, .taskheading > div {
+    float: left;
+    width: 210px;
+    padding: 0;
+}
+.timeCard .taskselector > div {
+    height: 265px;
+    overflow: auto;
+    padding-bottom: 10px;
+    border-left: 1px solid #ccc;
+    margin-top: 28px;
+}
+.timeCard .taskselector > div:first-child {
+    border-left: 0;
+}
+.timeCard .taskheading {
+    position: absolute;
+    width: 99.7%;
+    background: #E8E7E7;
+}
+.timeCard .taskheading > div {
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    border-bottom: 0;
+    padding: 2px 2px 2px 8px;
+    width: 200px;
+    margin-top: 2px;
+}
+.timeCard .taskselector div.heading {
+    display: block;
+    height: 25px;
+    overflow: visible;
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+    background: none repeat scroll 0 0 #F5F5F6;
+    border: 1px solid #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+}
+/******************************************************************
+ 1. Progress
+******************************************************************/
+
+.timeCard .progress {
+    width: 100px;
+    height: 10px;
+    margin: 0 0 0 2px;
+}
+.timeCard .progress .blue {
+    margin: 0px;
+    height: 10px;
+    width: 12px;
+}
+.timeCard .progressdetail {
+    font-size: 11px;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    float: left;
+}
+.timeCard .progresshrs {
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 2px;
+    padding: 0 0 0 2px;
+}
+.timeCard .progresshrs:hover {
+    font-size: 11px;
+    margin-bottom: 2px;
+    padding: 0 0 0 2px;
+}
+/******************************************************************
+ 1. Box
+******************************************************************/
+
+.timeCard .box-table td.w456 {
+    width: 456px;
+}
+.timeCard .box-table td.w113 {
+    width: 112px;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+.timeCard .box-table th {
+    padding: 6px 0px 6px 0px;
+    background: #f5f5f6;
+    border-bottom: 2px solid #cccccc;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+.timeCard .box-table td {
+    padding: 0;
+    margin: 0px;
+    background: #fff;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid transparent;
+    height: 35px;
+    font-size: 12px;
+}
+.timeCard .box-table thead {
+    border-bottom: 1px solid #cccccc;
+}
+.timeCard .box-table th.rday {
+    width: 45px;
+}
+.timeCard .box-table th.holiday {
+    background: #f0f0f0;
+    width: 45px;
+}
+.timeCard .box-table td.holiday, .timeCard #box-table-at td.holiday {
+    background: #f0f0f0;
+}
+.timeCard .box-table td.rowicon {
+    padding: 0px 1px;
+    width: 55px;
+    vertical-align: middle;
+    text-align: center;
+}
+.timeCard .box-table td.rowicon img {
+    height: 15px;
+}
+.timeCard .box-table td.tdhrs {
+    width: 38px;
+}
+.timeCard .sort {
+    cursor: pointer;
+}
+/* Complete
+--------------------------*/
+
+.timeCard #box-table-ab tr.complete .detail td, .timeCard #box-table-ab tr.complete .detail th {
+    background-color: #FFF;
+}
+.timeCard #box-table-ab tr.complete .detail td.holiday, .timeCard #box-table-ab tr.complete .detail th.holiday {
+    background-color: #F0F0F0;
+}
+/* Err
+--------------------------*/
+
+.timeCard .box-table tr.trnm.err td, .timeCard .box-table tr.trnm.err .taskinput, .timeCard .box-table tr.trnm.err .hours, .timeCard .box-table tr.trnm.err .showbill, .timeCard .box-table tr.trnm.err .thours, .timeCard .box-table tr.trnm.err th {
+    background-color: #A82618;
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+.timeCard .box-table tr.trnm.err td.holiday, .timeCard .box-table tr.trnm.err th.holiday {
+    background-color: #A82618;
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+.timeCard .box-table tr.trnm.err .detail td, .timeCard .box-table tr.trnm.err .detail th {
+    background-color: #FFF;
+}
+.timeCard .box-table tr.trnm.err .detail td.holiday, .timeCard .box-table tr.trnm.err .detail th.holiday {
+    background-color: #A82618;
+    color: #FFF !important;
+    text-shadow: none !important;
+}
+/******************************************************************
+ 1. Input
+******************************************************************/
+
+.timeCard .box-table input.taskinput, .timeCard .box-table input.hours, .timeCard .box-table input.showbill, .timeCard .box-table input.thours, .timeCard .box-table input.catinput, .timeCard .box-table input.nhours, .timeCard .box-table textarea {
+    box-shadow: none;
+    border-radius: none;
+    float: none;
+}
+.timeCard .box-table input.taskinput, .timeCard .box-table input.hours, .timeCard .box-table input.showbill, .timeCard .box-table input.thours, .timeCard .box-table input.catinput, .timeCard .box-table input.nhours, .timeCard .box-table textarea {
+    height: 100%;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-spacing: 0;
+    padding: 0 4px 0 5px;
+    font-size: 12px;
+}
+.timeCard .box-table input.catinput {
+    padding: 0 5px;
+}
+#nobilltbody .uicombo li:first-child:hover, .uicombo.uibillingCode li:first-child:hover {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+#nobilltbody .uicombo, .uicombo li:last-child:hover, .uicombo.uibillingCode, .uicombo.uibillingCode li:last-child:hover {
+    -moz-border-radius: 0px 0px 2px 2px !important;
+    -webkit-border-radius: 0px 0px 2px 2px !important;
+    border-radius: 0px 0px 2px 2px !important;
+}
+.timeCard .dropDown input {
+    z-index: 1;
+}
+.dropArrow {
+    position: relative;
+}
+.timeCard .dropArrow:after {
+    content: '';
+    position: absolute;
+    top: -37px;
+    right: 0;
+    width: 20px;
+    height: 37px;
+    z-index: 0;
+    background: white url(../images/arrowDown.png) right center no-repeat;
+}
+.trnmfocus .dropArrow:after {
+    background: url(../images/arrowDown.png) right center no-repeat, url(../images/timecard/timecardRowHover.png) repeat-x;
+}
+.timeCard .box-table input.catinput {
+    height: 37px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.timeCard .box-table input.showbill {
+    height: 37px;
+    width: 100%;
+    padding-right: 16px !important;
+    vertical-align: middle;
+    padding-left: 5px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.timeCard .box-table input.taskinput {
+    margin: 0;
+    padding: 0 50px 0 5px;
+    height: 37px;
+    width: 100%;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+}
+.timeCard .box-table input.taskinput:hover, .timeCard .box-table input.catinput:hover, .timeCard .box-table input.showbill:hover {
+    border: none;
+}
+.timeCard .box-table tr.trnmfocus input.taskinput:focus, .timeCard .box-table tr.trnmfocus input.grey:focus, .timeCard .box-table td:hover, .timeCard .box-table input.taskinput:hover, .timeCard .box-table input.hours:hover, .timeCard .box-table input.showbill:hover, .timeCard .box-table input.thours:hover, .timeCard .box-table input.catinput:hover, .timeCard .box-table input.nhours:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.timeCard .box-table tr.trnmfocus input.taskinput:focus {
+    padding-right: 0px;
+}
+.timeCard .box-table tr.trnmfocus input.grey:focus {
+    padding-left: 3px;
+    padding-right: 0px;
+    background: url(../images/timecard/typeSearch.png) no-repeat left center;
+}
+.timeCard .box-table input:hover, .timeCard .box-table td:hover {} .timeCard .box-table .tdpg input:hover, .timeCard .box-table td.tdpg:hover {
+    background: #FFF;
+}
+.timeCard .hours, .timeCard .nhours, .timeCard .thours {
+    text-align: right;
+    width: 35px;
+}
+.timeCard .thours, .timeCard .totcol, .timeCard .tottotal {
+    font-weight: bold;
+}
+.timeCard input.comment, .timeCard.timeCardClosed input.comment {
+    background: url("../images/timecard/cloud.png") top right no-repeat !important;
+}
+.timeCard input.comment:hover, .timeCard input.comment:focus {
+    background: url("../images/timecard/cloud.png") top right no-repeat;
+}
+.timeCard input.comment.invoiced, .timeCard.timeCardClosed input.comment.invoiced, .timeCard input.invoiced, .timeCard.timeCardClosed input.invoiced, .timeCard input.hours.invoiced, .timeCard.timeCardClosed input.hours.invoiced {
+    color: #a82618;
+}
+.timeCard div.invoiced, .timeCard.timeCardClosed div.invoiced {
+    color: #fff;
+}
+/* Combo
+--------------------------*/
+
+.timeCard ul.uicombo.uicategory {
+    width: 55%;
+    /*  width: 99.8%;*/
+}
+.timeCard ul.uicombo.uibillingCode {
+    width: 132px;
+    max-height: 300px;
+    overflow: auto;
+}
+.timeCard ul.uicombo.uicategory {
+    max-height: 250px;
+    overflow: auto;
+}
+.timeCard ul.uicombo {
+    position: absolute;
+    margin: 1px 0 0;
+    list-style: none;
+    line-height: 22px;
+    display: none;
+    z-index: 5;
+}
+.timeCard ul.uicombo li:hover, .timeCard ul.uicombo li.active:hover {} .timeCard ul.uicombo li {
+    cursor: pointer;
+    padding: 10px !important;
+}
+.timeCard ul.uicombo li.active {}
+/* Closed
+--------------------------*/
+
+.timeCard.timeCardClosed .box-table tr.trnmfocus input.grey:focus, .timeCard.timeCardClosed .box-table tr input.grey:focus, .timeCard.timeCardClosed .box-table input:hover, .timeCard.timeCardClosed .box-table td:hover, .timeCard.timeCardClosed .box-table tr.trnmfocus input.taskinput:focus, .timeCardClosed .box-table tr.trnmfocus input.grey:focus, .timeCardClosed .box-table input:hover, .timeCardClosed .box-table td:hover, .timeCard.timeCardClosed .box-table input.taskinput:hover, .timeCardClosed .box-table input.catinput:hover, .timeCard.timeCardClosed .box-table div.showbill:hover, .timeCard.timeCardClosed .box-table tr.trnmfocus td, .timeCard.timeCardClosed input:focus {
+    background: #FFF;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.timeCard.timeCardClosed .box-table td.holiday, .timeCard.timeCardClosed .box-table tr.trnmfocus td.holiday, .timeCard.timeCardClosed .box-table td.holiday:hover, .timeCard.timeCardClosed .box-table input.hours, .timeCard.timeCardClosed .box-table tr.trnmfocus td.tdhrs, .timeCard.timeCardClosed .box-table input.hours:hover, .timeCard.timeCardClosed .box-table input.nhours, .timeCard.timeCardClosed .box-table input.nhours:hover, .timeCard.timeCardClosed .box-table input.nhours:focus, .timeCard .box-table input.showbill.optdisabled, .timeCard .box-table input.showbill.optdisabled:hover, .timeCard .box-table input.showbill.optdisabled:focus {
+    background: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #666666;
+}
+.timeCard.timeCardClosed .box-table tr.trnmfocus input.taskinput:focus {
+    border: none;
+    width: 290px;
+    height: 35px;
+    padding-left: 5px;
+}
+.timeCard.timeCardClosed input.hours.comment, .timeCard.timeCardClosed input.hours.comment:hover, .timeCardClosed.timeCard input.hours.comment:focus {
+    background: url("../images/timecard/cloud.png") top right no-repeat, url("../images/timecard/crossbg.png") repeat;
+    cursor: text;
+}
+#imgshowcomment {
+    cursor: pointer;
+}
+/******************************************************************
+ 1. Subtask, Detailsearch
+******************************************************************/
+
+.timeCard .detail td, .timeCard .detail th {
+    height: auto;
+}
+.timeCard .fancyboxTitle {} .timeCard .detail {
+    padding: 0;
+}
+.timeCard .detail >div {
+    padding: 5px;
+}
+.timcardSubtasks {
+    /* Check '.timcardSubtasks', '.timeCard #box-table-ab .detailsearch' and '.timeCard .taskselector' in master.css */
+    
+    min-width: 300px;
+    padding: 1em !Important;
+    background: white;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
+    margin: 1px;
+}
+.timcardSubtasks hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.billableCheckbox {
+    padding: 9px 3px 6px;
+}
+.timeCard select {
+    min-width: 97%;
+}
+.timeCard textarea {
+    min-width: 90%;
+    padding: 5px !important;
+}
+.timeCard #box-table-ab .timcardSubtasks table tr td, #box-table-ab .timcardSubtasks table, .timeCard #box-table-ab .timcardSubtasks table tr:hover td {
+    background: none;
+    border: none;
+    padding: 2px;
+    margin: 2px;
+    height: auto;
+    vertical-align: middle;
+}
+.timeCard #box-table-ab .timcardSubtasks > table {
+    width: 300px;
+}
+.timeCard #box-table-ab div.srdetails {
+    padding: 1px;
+    margin: 8px 0 0 !Important;
+    min-width: 500px;
+    max-height: 400px !important;
+}
+.timeCard #box-table-ab .detailsearch {
+    /* Check '.timcardSubtasks', '.timeCard #box-table-ab .detailsearch' and '.timeCard .taskselector' in master.css */
+    
+    padding: 1em !Important;
+    background: white;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
+    margin: 1px;
+    max-height: 322px;
+    overflow: auto;
+}
+.timeCard #box-table-ab .detailsearch td:hover, .timeCard #box-table-ab .detailsearch td.srclient, #box-table-ab .detailsearch td.srproject, #box-table-ab .detailsearch td.srtask {
+    height: 25px;
+    border: none;
+    min-width: 150px;
+}
+.timeCard #box-table-ab .detailsearch table {
+    margin-top: 10px;
+}
+.timeCard #box-table-ab .detailsearch table tbody th {
+    color: white;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1) !Important;
+    border: none;
+    padding: .5em 1em .3em;
+}
+.timeCard #box-table-ab .detailsearch table tr:nth-child(odd) td, .box-table tr.trnmfocus .detailsearch td {
+    background: none !important;
+}
+.timeCard #box-table-ab .detailsearch table tr:hover td {
+    background: #dfdfdf !Important;
+}
+.timeCard #box-table-ab .detailsearch table tr:nth-child(even) td {
+    /* See '#contentWrapper .elevencol .ct .even' in creative.css for additional styles */
+}
+.timeCard #box-table-ab .detailsearch table, .timeCard #box-table-ab .detailsearch table tr {
+    border: none;
+}
+.timeCard #box-table-ab .detailsearch table tr:hover, .timeCard #box-table-ab .detailsearch table tr:hover td {
+    cursor: pointer;
+    border: none;
+}
+.timeCard #box-table-ab .detailsearch table th, .timeCard #box-table-ab .detailsearch table td {
+    padding: 6px 10px;
+    border: none;
+    text-align: left;
+    height: auto !important;
+}
+.srdetails {
+    margin: auto;
+}
+.srdetails.detail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 0;
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent;
+}
+.timeCard #box-table-ab .detailsearch div.totresults {
+    height: 13px;
+    margin: 0 0 5px;
+    padding: 2px;
+    min-width: 200px;
+}
+/******************************************************************
+ 1. Comment
+******************************************************************/
+
+.timeCard #timecardshowcomment {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+}
+.timeCard #timecardshowcomment th {
+    background: none repeat scroll 0 0 #F5F5F6;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #cccccc;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 10px 6px 20px;
+}
+.timeCard #timecardshowcomment td {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: none;
+    padding: 6px 10px 6px 20px;
+}
+.timeCard .commentpad {
+    padding: 0px 0px 5px 0px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.timeCard .commentpad img {
+    margin-top: 4px;
+    margin-left: 5px;
+    position: absolute;
+}
+.timeCard .commentpad strong {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+.timeCard #timecardshowcomment tr.odd td {
+    background: none repeat scroll 0 0 #F5F5F5;
+}
+/******************************************************************
+ 1. Common
+******************************************************************/
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+}
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    background: #d9d9d9;
+    margin: 0px 15px 0px 0px !important;
+    padding: 6px 10px;
+}
+.fright span {
+    font-weight: normal;
+    font-size: 11px;
+}
+.w390 {
+    width: 390px;
+}
+.timeCard #tctopbutton button {
+    padding: 10px;
+}
+.timeCard .divider {
+    background-color: #AAAAAA;
+    border-right: 1px solid #FFFFFF;
+    display: inline;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0 1px 0 0;
+    width: 1px;
+}
+.timeCard #tctopbutton {
+    background: #d9d9d9;
+    border: none;
+    border-bottom: 2px #BBB solid;
+    border-top: 1px #BBB solid;
+    padding: 5px 10px 3px;
+    height: 55px;
+    /*43px*/
+}
+.timeCard #tctopbutton img {
+    padding-bottom: 4px;
+}
+/******************************************************************
+ 1. Week
+******************************************************************/
+
+.timeCard #weekdetails {
+    font-size: 12px;
+    margin-left: 15px;
+}
+.timeCard .subtit {
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 1px;
+    text-align: left;
+}
+.timeCard input.selectweekdate {
+    visibility: hidden;
+}
+.timeCard div.selectweekduration {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: -28px;
+    padding-left: 30px;
+    position: absolute;
+    text-align: left;
+    /*  width: 250px;*/
+    
+    z-index: 50;
+}
+.timeCard #weekdetails > div {
+    margin: 0px 0px 10px 0px;
+}
+.timeCard #weekdetails .fleft, .timeCard #weekdetails .fright {
+    text-align: center;
+}
+.timeCard #weekdetails .frow {
+    font-size: 15px;
+}
+.timeCard #weekdetails .usrtitle1 {
+    color: #a82618;
+}
+.timeCard #weekdetails .usrtitle0 {
+    color: #0a700c;
+}
+.timeCard #selectweek {
+    text-align: left;
+    height: 29px;
+}
+.timeCard .selectweekduration.s0 {
+    background: url(../images/timecard/cal0.png) no-repeat left;
+}
+.timeCard .selectweekduration.s1 {
+    background: url(../images/timecard/cal1.png) no-repeat left;
+}
+.timeCard .selectweekduration.s2 {
+    background: url(../images/timecard/cal2.png) no-repeat left;
+}
+.timeCard .selectweekduration.s3 {
+    background: url(../images/timecard/cal3.png) no-repeat left;
+}
+.timeCard .selectweekduration.s4 {
+    background: url(../images/timecard/cal4.png) no-repeat left;
+}
+.timeCard .hideme {
+    display: none;
+}
+.timeCard .noTimecardTask, .timeCard .noTimecardNonBill {
+    border: none;
+    font-size: 15px;
+    height: 25px;
+    padding: 10px 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+.timeCard .msgSubmitted {
+    margin: 5px 0 0 0;
+    padding: 5px;
+    min-height: 30px;
+}
+.timeCard form {
+    margin: 0;
+}
+#chguser {
+    margin-top: 5px;
+}
+/******************************************************************
+ My Settings Styles
+******************************************************************/
+
+.headlineHR.emailHR {
+    width: 92%;
+    float: left;
+}
+.headlineHR.emailHR:after {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 0;
+}
+#DragWordList {} #DragWordList li {
+    padding-left: 15px;
+    cursor: pointer;
+    list-style: none;
+    background: url(../images/plusListStyle.png) no-repeat 2px 5px;
+    margin-bottom: 4px;
+}
+#DragWordList li:hover {
+    color: #0074b0;
+}
+#DragWordList h6 {
+    font-weight: bold;
+}
+.cke_skin_kama {
+    padding: 1px !important;
+    outline: 0 !Important;
+}
+#contentWrapper.ninecol .ui-multiselect {
+    margin-top: 0 !Important;
+}
+#editEmailLinks {
+    margin-bottom: 35px;
+}
+/******************************************************************
+ My Settings Styles
+******************************************************************/
+
+#mySettings .labelImages {
+    margin-top: -3px;
+}
+#dashboardPanelList input[type="checkbox"] {
+    margin: 3px 5px 3px 0 !Important;
+}
+/*******************************************************************************
+  Used to hide the template link on the dashboard for outstanding invoices panel
+********************************************************************************/
+
+table#outStandingInvoicesPanel tr td:nth-child(2), table#outStandingInvoicesPanel th:nth-child(2) {
+    display: none;
+}
+/*******************************************************************************
+  GRID Styles for export, Date range
+********************************************************************************/
+
+.gridHeader {
+    background-color: #EFEFEF;
+    padding: 5px;
+    margin-bottom: 18px;
+    border-radius: 2px;
+}
+.gridHeader .links {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.gridHeader input {
+    /*  width: 78%;*/
+}
+.gridHeader input, .gridHeader button {} #gridDates {
+    list-style: none;
+    float: right;
+    margin-top: 2px;
+    width: 47%;
+}
+#gridDates li {
+    float: right;
+    margin-right: 5px;
+    width: 41%;
+}
+#gridDates li.button {
+    width: 11% !important;
+}
+#gridDates .dateWrapper::after {
+    /*  left: 76%;*/
+}
+#gridDates .squareRedButton {
+    width: 34px;
+    height: 34px;
+}
+#gridDates .closeButton::after {
+    top: 1px;
+    left: 1px;
+}
+.gridHeader button {
+    margin-right: 1px !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    font-size: 0.9em !important;
+    padding-top: 9px !important;
+    padding-bottom: 10px !important;
+}
+.export {
+    margin-right: 10px;
+}
+#monthlyTimecard {
+    margin: 0 10px 20px 0;
+}
+#userTimecardWrapper {
+    margin-top: 3px;
+    float: right;
+}
+#userTimecardWrapper select {
+    max-width: 200px;
+    /*220px*/
+}
+.clientQuickJob {
+    cursor: pointer;
+}
+#sounds {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}

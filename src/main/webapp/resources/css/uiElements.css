@@ -1,0 +1,1070 @@
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* uiXSprites = X repeatable sprites */
+
+/* uiSprites = non repeatable sprites */
+
+/******************************************************************
+ Inputs, Textarea, Select, Radio/Checkboxes
+******************************************************************/
+
+#contentWrapper input {} textarea {
+    width: 100%;
+}
+#wrapper textarea {
+    width: 100% !important;
+}
+input, textarea, .uploadWrapper {
+    /* Removing the default styles from browsers */
+    border: 1px solid #D8D8D8;
+    /* End Removing the default styles from browsers */
+    width: 100%;
+    text-shadow: 0 1px white !important;
+    position: relative;
+    color: #666;
+    padding: 10px 14px 9px;
+    margin: 0;
+    float: left;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /*-moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3);
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3);*/
+    /*inset 0px 1px 1px 1px rgba(0, 0, 0, .3)*/
+    /* http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+63,ffffff+82,efefef+100&0.15+0,0.8+82,0.5+100;Custom */
+    /* background: -moz-linear-gradient(top,  rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.65) 63%, rgba(255,255,255,0.8) 82%, rgba(239,239,239,0.5) 100%);*/
+    /* FF3.6+ */
+    /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.15)), color-stop(63%,rgba(255,255,255,0.65)), color-stop(82%,rgba(255,255,255,0.8)), color-stop(100%,rgba(239,239,239,0.5)));*/
+    /* Chrome,Safari4+ */
+    /* background: -webkit-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.65) 63%,rgba(255,255,255,0.8) 82%,rgba(239,239,239,0.5) 100%);*/
+    /* Chrome10+,Safari5.1+ */
+    /* background: -o-linear-gradient(top,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.65) 63%,rgba(255,255,255,0.8) 82%,rgba(239,239,239,0.5) 100%);*/
+    /* Opera 11.10+ */
+    /* background: linear-gradient(to bottom,  rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.65) 63%,rgba(255,255,255,0.8) 82%,rgba(239,239,239,0.5) 100%);*/
+    /* W3C */
+}
+.ui-combobox input {
+    max-height: 31px;
+    /*10px*/
+}
+.uploadWrapper {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    /* 34px*/
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 3px 0;
+    float: none;
+}
+.uploadWrapper p {
+    float: left;
+    padding: 8px 0 0 15px;
+}
+.uploadWrapper #uploadfile {
+    margin: 0;
+    float: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.uploadWrapper button {
+    min-width: 51px;
+    width: 51px !Important;
+    height: 87%;
+    margin-top: 3px !important;
+    margin-right: 6px !important;
+    text-align: left;
+    font-size: 1em !important;
+    position: relative;
+    cursor: pointer;
+    float: right !Important;
+}
+.uploadWrapper button:before {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -485px -130px;
+    display: block;
+    float: left;
+    top: 5px;
+    left: 10px;
+    width: 31px;
+    height: 22px;
+    position: absolute;
+}
+.uploadWrapper input[type="file"] {
+    font: 500px monospace;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 100% !important;
+}
+#upload_area {
+    margin-top: 5px;
+    position: relative;
+}
+#upload_area #invoice_items {
+    /*  margin-top: 20px;*/
+    margin-top: -6px;
+}
+#upload_area #invoice_items .ui-sortable td {
+    position: relative;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #upload_area #invoice_items .ui-sortable tr:first-child td:first-child:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -16px;
+        left: 47px;
+        width: 0;
+        border-width: 0 15px 15px;
+        border-style: solid;
+        border-color: #CCC transparent;
+        display: none;
+    }
+}
+#upload_area .squareRedButton {
+    margin-top: 4px !important;
+    margin-right: 0 !important;
+}
+#invoice_items td {
+    padding: 2px;
+    vertical-align: middle !important;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type=checkbox] {
+        -webkit-appearance: none;
+        -webkit-border-radius: 2px !Important;
+        border-radius: 2px !Important;
+    }
+    input[type=radio] {
+        -webkit-appearance: none;
+        -webkit-border-radius: 50px !Important;
+        border-radius: 50px !Important;
+    }
+}
+input[type=checkbox], input[type=radio] {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.1em !important;
+    color: #666 !important;
+}
+input[type=checkbox] {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    padding: 0 !Important;
+    width: 1em !Important;
+    height: 1.1em;
+    vertical-align: text-top;
+    border-radius: 0;
+    border: 0;
+}
+input[type=checkbox]:hover:after {
+    position: absolute;
+    content: '';
+    right: -3px;
+    top: -5px;
+    height: 16px;
+    width: 18px;
+}
+input[type=checkbox]:checked::after {
+    position: absolute;
+    content: '';
+    right: -3px;
+    top: -5px;
+    height: 16px;
+    width: 18px;
+    background: url(../images/uiSprites.png) no-repeat -10px -171px;
+}
+#homePageLogin input[type=checkbox]:checked::after {
+    background: url(../images/uiSprites.png) no-repeat -50px -171px;
+}
+input[type=radio] {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    padding: 0 !Important;
+    width: 1em !Important;
+    height: 1.1em;
+    vertical-align: text-top;
+    border-radius: 0;
+    border: 0;
+}
+input[type=radio]:checked::after {
+    position: absolute;
+    content: '';
+    right: -3px;
+    top: -5px;
+    height: 16px;
+    width: 18px;
+    background: url(../images/uiSprites.png) no-repeat -51px -128px;
+}
+.radioGroup li {
+    margin-bottom: 5px !Important;
+}
+.radioGroup li:last-child {
+    margin-bottom: 0 !important;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Removing the default styles from browsers */
+    resize: none;
+    /* End Removing the default styles from browsers */
+    min-width: 150px;
+    height: 90px;
+    padding: 14px;
+}
+input:focus, textarea:focus, .uploadWrapper:hover {
+    outline: none;
+    background: #F0F0F0;
+}
+input[disabled], input[disabled]:hover {
+    opacity: 0.70;
+    cursor: not-allowed;
+    background-color: #eaeded;
+}
+.formWarning {
+    border: 1px solid #f65c4b;
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(246, 92, 75, 1);
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(246, 92, 75, 1);
+    box-shadow: inset 0px 0px 0px 1px rgba(246, 92, 75, 1);
+}
+option {
+    padding: 4px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+        -webkit-appearance: none;
+        padding: 0 35px 0 10px !important;
+        color: #666;
+        height: 34px;
+        font-weight: normal !Important;
+        font-family: Arial, Helvetica, sans-serif !important;
+        border: 1px solid #d5d5d5 !Important;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        /* http://www.colorzilla.com/gradient-editor/#f2f2f2+0,e0e0e0+99;Custom */
+        background: url(../images/selectIcon.png) right no-repeat, -moz-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+        /* FF3.6+ */
+        background: url(../images/selectIcon.png) right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(99%, #e0e0e0)) !important;
+        /* Chrome,Safari4+ */
+        background: url(../images/selectIcon.png) right no-repeat, -webkit-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+        /* Chrome10+,Safari5.1+ */
+        background: url(../images/selectIcon.png) right no-repeat, -o-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+        /* Opera 11.10+ */
+        background: url(../images/selectIcon.png) right no-repeat, -ms-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+        /* IE10+ */
+        background: url(../images/selectIcon.png) right no-repeat, linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 99%) !important;
+        /* W3C */
+    }
+    select:hover {
+        /* http://www.colorzilla.com/gradient-editor/#e0e0e0+0,d6d6d6+100;Custom */
+        background: url(../images/selectIcon.png) right no-repeat, -moz-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+        /* FF3.6+ */
+        background: url(../images/selectIcon.png) right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e0e0), color-stop(100%, #d6d6d6)) !important;
+        /* Chrome,Safari4+ */
+        background: url(../images/selectIcon.png) right no-repeat, -webkit-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+        /* Chrome10+,Safari5.1+ */
+        background: url(../images/selectIcon.png) right no-repeat, -o-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+        /* Opera 11.10+ */
+        background: url(../images/selectIcon.png) right no-repeat, -ms-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+        /* IE10+ */
+        background: url(../images/selectIcon.png) right no-repeat, linear-gradient(to bottom, #e0e0e0 0%, #d6d6d6 100%) !important;
+        /* W3C */
+    }
+}
+select {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+/* SMALL FIX FOR THE DROPDOWN IN FIREFOX */
+
+@-moz-document url-prefix() {
+    select, select > option, option {
+        overflow: hidden !important;
+        line-height: normal !important;
+        height: 25px !important;
+        padding: 0 !Important;
+        margin-top: 3px;
+    }
+}
+.ui-multiselect {
+    -webkit-appearance: none;
+    height: 34px;
+    position: relative;
+    padding: 0 35px 0 10px !important;
+    color: #666;
+    font-weight: normal !Important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    /* http://www.colorzilla.com/gradient-editor/#f2f2f2+0,e0e0e0+99;Custom */
+    background: url(../images/selectIcon.png) right no-repeat, -moz-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+    /* FF3.6+ */
+    background: url(../images/selectIcon.png) right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(99%, #e0e0e0)) !important;
+    /* Chrome,Safari4+ */
+    background: url(../images/selectIcon.png) right no-repeat, -webkit-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+    /* Chrome10+,Safari5.1+ */
+    background: url(../images/selectIcon.png) right no-repeat, -o-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+    /* Opera 11.10+ */
+    background: url(../images/selectIcon.png) right no-repeat, -ms-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%) !important;
+    /* IE10+ */
+    background: url(../images/selectIcon.png) right no-repeat, linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 99%) !important;
+    /* W3C */
+}
+.ui-multiselect:hover {
+    /* http://www.colorzilla.com/gradient-editor/#e0e0e0+0,d6d6d6+100;Custom */
+    background: url(../images/selectIcon.png) right no-repeat, -moz-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+    /* FF3.6+ */
+    background: url(../images/selectIcon.png) right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e0e0), color-stop(100%, #d6d6d6)) !important;
+    /* Chrome,Safari4+ */
+    background: url(../images/selectIcon.png) right no-repeat, -webkit-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+    /* Chrome10+,Safari5.1+ */
+    background: url(../images/selectIcon.png) right no-repeat, -o-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+    /* Opera 11.10+ */
+    background: url(../images/selectIcon.png) right no-repeat, -ms-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%) !important;
+    /* IE10+ */
+    background: url(../images/selectIcon.png) right no-repeat, linear-gradient(to bottom, #e0e0e0 0%, #d6d6d6 100%) !important;
+    /* W3C */
+}
+.ui-multiselect {
+    border: 1px solid #d5d5d5 !Important;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    cursor: pointer;
+}
+.ui-multiselect span {
+    background: none !important;
+}
+.ui-multiselect-menu {
+    padding: 0 0 3px !Important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.ui-multiselect-menu .ui-widget-header {
+    -moz-border-radius: 2px 2px 0px 0px !Important;
+    -webkit-border-radius: 2px 2px 0px 0px !Important;
+    border-radius: 2px 2px 0px 0px !Important;
+    background: #666 !Important;
+    border: 0 !important;
+    padding: 7px 0 !important;
+    height: auto !important;
+    text-shadow: 0 1px black !important;
+}
+.ui-multiselect-menu .ui-widget-header .ui-helper-reset li:first-child {
+    margin-left: 12px !important;
+}
+.ui-multiselect-menu .ui-widget-header .ui-icon {
+    margin-top: -1px !important;
+}
+.ui-multiselect-menu .ui-icon-circle-close {
+    margin-right: 12px !important;
+}
+.ui-multiselect-menu .ui-multiselect-filter input {
+    border: 0 !important;
+    background: white !Important;
+    margin: 0 10px 0 12px !important;
+    padding: 2px 0 !important;
+}
+.ui-multiselect-menu .ui-multiselect-checkboxes {
+    overflow-x: hidden;
+}
+.ui-multiselect-menu label {
+    width: 100%;
+    background: none !Important;
+    border: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    color: #666 !important;
+    text-shadow: 0 1px white !important;
+    font-weight: normal !Important;
+    text-align: left !important;
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, .1), 0px 2px 0px 0px rgba(255, 255, 255, .5);
+}
+.ui-multiselect-single .ui-multiselect-checkboxes label {
+    padding: 15px !important;
+    width: 94% !Important;
+}
+.ui-multiselect-menu input[type=checkbox] {
+    margin-left: 12px;
+    top: 0 !important;
+}
+.ui-autocomplete, #invOptionsMenu, #editOptionsMenu, .uicombo, .ui-multiselect-menu, .qs-options-menu {
+    border: 1px solid #d5d5d5;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 0px 0px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(179, 179, 179, 1);
+    box-shadow: 0px 2px 0px 0px rgba(179, 179, 179, 1);
+    background: white;
+}
+.ui-multiselect-menu {
+    /* http://www.colorzilla.com/gradient-editor/#ffffff+0,e0e0e0+100;Custom */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%) !important;
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(224, 224, 224, 1))) !important;
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%) 0 0 !important;
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%) !important;
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%) !important;
+    /* IE 10+ */
+    background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 100%) !important;
+    /* W3C */
+}
+#expenseCategorySelect:after {
+    padding: 0 10px 0;
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    -moz-border-radius: 0px 2px 2px 0px;
+    -webkit-border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 2px 2px 0px;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(179, 179, 179, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(179, 179, 179, 1);
+    /* http://www.colorzilla.com/gradient-editor/#ffffff+0,e0e0e0+100;Custom */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px, url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* FF3.6+ */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* Chrome,Safari4+ */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* Chrome10+,Safari5.1+ */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* Opera 11.10+ */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* IE10+ */
+    background: url(../images/uiSprites.png) no-repeat -66px -164px;
+    /* W3C */
+}
+/******************************************************************
+ Buttons
+******************************************************************/
+
+button, .ct_advanced_search, .ct_pager, .fallr-button, .readMore, .creativeButton, .fallr-button, input[type=image].addSubtask, .timecardButton, .fc-button, a.blueButton, .fallr-button:focus {
+    position: relative;
+    text-shadow: 0 1px white !important;
+    padding: 10px 18px 12px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #b6b5b5;
+    margin-right: 10px;
+    font-size: 1.1em !important;
+    color: #666 !important;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    /* http://www.colorzilla.com/gradient-editor/#f2f2f2+0,e0e0e0+99;Custom */
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(99%, #e0e0e0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 99%);
+    /* W3C */
+}
+
+#loginForm input{
+	position: relative;
+    text-shadow: 0 1px white !important;
+    padding: 10px 18px 12px;
+    float: left;
+    border: 1px solid #b6b5b5;
+    margin-right: 10px;
+    font-size: 1.1em !important;
+    color: #666 !important;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+    /* http://www.colorzilla.com/gradient-editor/#f2f2f2+0,e0e0e0+99;Custom */
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(99%, #e0e0e0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 99%);
+    /* W3C */
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type=checkbox], input[type=radio] {
+        text-shadow: 0 1px white !important;
+        padding: 10px 18px 12px;
+        border: 1px solid #b6b5b5;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1);
+        /* http://www.colorzilla.com/gradient-editor/#f2f2f2+0,e0e0e0+99;Custom */
+        background: -moz-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(99%, #e0e0e0));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #f2f2f2 0%, #e0e0e0 99%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 99%);
+        /* W3C */
+    }
+}
+button, #loginForm input, .ct_advanced_search, .ct_pager, .fallr-button, .readMore, .creativeButton, .fallr-button {
+    min-width: 110px;
+}
+.ct_advanced_search, .ct_pager {
+    border: 1px solid #d5d5d5;
+}
+button:hover, #loginForm input:focus, .ct_advanced_search:hover, .readMore:hover, .jqTransformSelectWrapper:hover, .fallr-button:hover, input[type=image].addSubtask:hover, .timecardButton:hover, .fc-button:hover, .uploadWrapper:hover button {
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1), inset 0px -2px 0px 0px rgba(255, 255, 255, .6);
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1), inset 0px -2px 0px 0px rgba(255, 255, 255, .6);
+    box-shadow: inset 0px -1px 0px 0px rgba(179, 179, 179, 1), inset 0px -2px 0px 0px rgba(255, 255, 255, .6);
+    /* http://www.colorzilla.com/gradient-editor/#e0e0e0+0,d6d6d6+100;Custom */
+    background: -moz-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e0e0), color-stop(100%, #d6d6d6));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e0e0e0 0%, #d6d6d6 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #e0e0e0 0%, #d6d6d6 100%);
+    /* W3C */
+}
+#loginForm input {
+    font-size: 1em;
+    padding: 19px 18px 17px;
+    min-width: 200px;
+}
+.blueButton {
+    padding: 10px 18px 12px;
+    /*12px 18px 14px*/
+}
+a.blueButton {
+    padding: 10px 20px 12px !Important;
+}
+.blueButton, .squareBlueButton, #sidebarNav a:hover, #sidebarNav a.activeLink, .blockUI.blockMsg, .loading2, #fallr-wrapper .fallr-button:first-child, .ALTtips, #tlyPageGuideWrapper .tlypageguide_toggle:hover, .ui-autocomplete a:hover, .uicombo li:hover, #invOptionsMenu a:hover, #editOptionsMenu a:hover, .qs-options-menu a:hover, .ui-datepicker td a:hover, .ui-datepicker .ui-state-active, .ui-datepicker-calendar tr td.highlighted-week a, .ui-datepicker-calendar tr:hover td.weekcal a, .timeCard #box-table-ab .detailsearch table tbody th, .quickHalfCollapse .ui-tabs-nav li:hover, .quickHalfCollapse .ui-state-active, .fc-state-active, .fc-state-active:hover, .fc-state-disabled, .fc-state-disabled:hover, #monthlyTimecard a, #accordion h4.activeHeadline, a.blueButton, .blueButton:focus {
+    color: white !important;
+    text-shadow: 0 1px #004162 !important;
+    border: 1px solid #004162;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1);
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 65, 98, 1);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(11, 133, 196, 1)), color-stop(100%, rgba(17, 94, 143, 1)));
+    background: -webkit-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%) 0 0;
+    background: -o-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    background: linear-gradient(to bottom, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+}
+.ui-multiselect-menu label:hover, .ui-multiselect-menu label.ui-state-active {
+    color: white !important;
+    text-shadow: 0 1px #004162 !important;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1);
+    cursor: pointer;
+    /* http://www.colorzilla.com/gradient-editor/#3fa1dd+0,105c94+100;Custom */
+    background: -moz-linear-gradient(top, rgba(63, 161, 221, 1) 0%, rgba(16, 92, 148, 1) 100%) !important;
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(63, 161, 221, 1)), color-stop(100%, rgba(16, 92, 148, 1))) !important;
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(63, 161, 221, 1) 0%, rgba(16, 92, 148, 1) 100%) 0 0 !important;
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(63, 161, 221, 1) 0%, rgba(16, 92, 148, 1) 100%) !important;
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(63, 161, 221, 1) 0%, rgba(16, 92, 148, 1) 100%) !important;
+    /* IE 10+ */
+    background: linear-gradient(top, rgba(63, 161, 221, 1) 0%, rgba(16, 92, 148, 1) 100%) !important;
+    /* W3C */
+}
+.blueButton:hover, .squareBlueButton:hover, #fallr-wrapper .fallr-button:first-child:hover, .timeCard .taskselector ul li.active, #accordion h4.activeHeadline:hover, a.blueButton:hover {
+    color: white !important;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    background: #005c8c;
+}
+.squareRedButton, input[type=image].deleteNewTask, input[type=image].deleteSubSpacer {
+    border: 1px solid #520c04;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1);
+    /* http://www.colorzilla.com/gradient-editor/#d14233+0,700505+100;Custom */
+    background: -moz-linear-gradient(top, rgba(209, 66, 51, 1) 0%, rgba(112, 5, 5, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(209, 66, 51, 1)), color-stop(100%, rgba(112, 5, 5, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(209, 66, 51, 1) 0%, rgba(112, 5, 5, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(209, 66, 51, 1) 0%, rgba(112, 5, 5, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(209, 66, 51, 1) 0%, rgba(112, 5, 5, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(top, rgba(209, 66, 51, 1) 0%, rgba(112, 5, 5, 1) 100%);
+    /* W3C */
+}
+.squareRedButton:hover, input[type=image].deleteNewTask:hover, input[type=image].deleteSubSpacer:hover {
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    box-shadow: inset 0px -2px 0px 0px rgba(82, 12, 4, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    /* http://www.colorzilla.com/gradient-editor/#b72d2d+0,5b0404+100;Custom */
+    background: -moz-linear-gradient(top, rgba(183, 45, 45, 1) 0%, rgba(91, 4, 4, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(183, 45, 45, 1)), color-stop(100%, rgba(91, 4, 4, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(183, 45, 45, 1) 0%, rgba(91, 4, 4, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(183, 45, 45, 1) 0%, rgba(91, 4, 4, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(183, 45, 45, 1) 0%, rgba(91, 4, 4, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(top, rgba(183, 45, 45, 1) 0%, rgba(91, 4, 4, 1) 100%);
+    /* W3C */
+}
+.squareYellowButton {
+    border: 1px solid #b37318;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1);
+    /* http://www.colorzilla.com/gradient-editor/#f8cd90+0,f2ac47+100;Custom */
+    background: -moz-linear-gradient(top, rgba(248, 205, 144, 1) 0%, rgba(242, 172, 71, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(248, 205, 144, 1)), color-stop(100%, rgba(242, 172, 71, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(248, 205, 144, 1) 0%, rgba(242, 172, 71, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(248, 205, 144, 1) 0%, rgba(242, 172, 71, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(248, 205, 144, 1) 0%, rgba(242, 172, 71, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(248, 205, 144, 1) 0%, rgba(242, 172, 71, 1) 100%);
+    /* W3C */
+}
+.squareYellowButton:hover {
+    border: 1px solid #b37318;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    box-shadow: inset 0px -2px 0px 0px rgba(179, 115, 24, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    /* http://www.colorzilla.com/gradient-editor/#f2ac47+0,b37318+100;Custom */
+    background: -moz-linear-gradient(top, rgba(242, 172, 71, 1) 0%, rgba(179, 115, 24, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(242, 172, 71, 1)), color-stop(100%, rgba(179, 115, 24, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(242, 172, 71, 1) 0%, rgba(179, 115, 24, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(242, 172, 71, 1) 0%, rgba(179, 115, 24, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(242, 172, 71, 1) 0%, rgba(179, 115, 24, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(242, 172, 71, 1) 0%, rgba(179, 115, 24, 1) 100%);
+    /* W3C */
+}
+.squareGreenButton, input[type=image].addNewTask {
+    border: 1px solid #075308;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1);
+    /* http://www.colorzilla.com/gradient-editor/#49fa4c+0,0a700c+100;Custom */
+    background: -moz-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(73, 250, 76, 1)), color-stop(100%, rgba(10, 112, 12, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* IE .10+ */
+    background: linear-gradient(to bottom, rgba(73, 250, 76, 1) 0%, rgba(10, 112, 12, 1) 100%);
+    /* W3C */
+}
+.squareGreenButton:hover, input[type=image].addNewTask:hover {
+    border: 1px solid #075308;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 51, 0, 1), inset 0px -3px 0px 0px rgba(255, 255, 255, .3);
+    /* http://www.colorzilla.com/gradient-editor/#00990a+0,004f00+100;Custom */
+    background: -moz-linear-gradient(top, rgba(0, 153, 10, 1) 0%, rgba(0, 79, 0, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 153, 10, 1)), color-stop(100%, rgba(0, 79, 0, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 153, 10, 1) 0%, rgba(0, 79, 0, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 153, 10, 1) 0%, rgba(0, 79, 0, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 153, 10, 1) 0%, rgba(0, 79, 0, 1) 100%);
+    /* IE 10+ */
+    background: linear-gradient(to bottom, rgba(0, 153, 10, 1) 0%, rgba(0, 79, 0, 1) 100%);
+    /* W3C */
+}
+.rightButton {
+    padding-right: 29px;
+}
+.rightButton:after {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -373px -91px;
+    display: block;
+    top: 11px;
+    right: 7px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+.leftButton:after {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -253px -91px;
+    display: block;
+    top: 11px;
+    left: 7px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+.squareBlueButton, .squareRedButton, .squareGreenButton, .turnArrowButton, .squareYellowButton {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    min-width: inherit;
+    position: relative;
+}
+.plusButton:after {
+    background: url(../images/uiSprites.png) no-repeat -85px -128px;
+}
+.saveButton:after {
+    background: url(../images/uiSprites.png) no-repeat -605px -166px;
+}
+.squareBlueButton.plusButton:after {
+    background: url(../images/uiSprites.png) no-repeat -405px -167px !important;
+}
+.plusButton:after, .saveButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.saveButton:after {
+    width: 23px;
+    height: 23px;
+}
+.minimizeButton {
+    /* Make changes for close in 'uiElements.css (.minimizeButton)', 'jquery-ui-1.8.16.custom.css (.ui-dialog .ui-dialog-titlebar-min span)' */
+    width: 18px;
+    height: 18px;
+    background: url(../images/uiSprites.png) no-repeat -132px -212px;
+}
+.minimizeButton:hover {
+    background: url(../images/uiSprites.png) no-repeat -132px -253px;
+}
+.restoreButton {
+    /* Make changes for close in 'uiElements.css (.restoreButton)', 'jquery-ui-1.8.16.custom.css (.dialog-restore span)' */
+    width: 18px;
+    height: 18px;
+    background: url(../images/uiSprites.png) no-repeat -172px -212px;
+}
+.restoreButton:hover {
+    background: url(../images/uiSprites.png) no-repeat -172px -253px;
+}
+.turnArrowButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/uiSprites.png) no-repeat -165px -128px;
+    display: block;
+}
+.squareRedButton .closeButton, .closeButton:after {
+    background: url(../images/uiSprites.png) no-repeat -124px -127px;
+}
+.squareRedButton .closeButton {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.closeButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.squareBlueButton.downArrow {
+    position: relative;
+    height: 31px;
+    max-height: 31px;
+    padding: 10px 14px 10px !important;
+    margin: 0 0 0 -2px !important;
+}
+.squareBlueButton.downArrow:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/uiSprites.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-position: -292px -52px;
+    top: 6px;
+    right: 8px;
+}
+.ui-combobox {
+    position: relative;
+    display: block;
+}
+.ui-combobox .squareBlueButton {
+    width: 30px !important;
+}
+.ui-combobox-input {
+    /*  -moz-border-radius: 5px 0px 0px 5px !important;
+    -webkit-border-radius: 5px 0px 0px 5px !important;
+    border-radius: 5px 0px 0px 5px !important;*/
+    margin: 0;
+    /*  font-size:.8em;*/
+}
+.ui-combobox .squareBlueButton {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    -moz-border-radius: 0px 2px 2px 0px;
+    -webkit-border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 2px 2px 0px;
+    border-bottom: 0;
+}
+/*------------added by mitch combo drop down------------------*/
+
+#downArrow .squareBlueButton {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/uiSprites.png) no-repeat -440px -36px !important;
+    display: block;
+    float: left;
+}
+/******************************************************************
+ Invioce Options Menu
+******************************************************************/
+
+#invOptionsMenu {
+    /*  See additional styles for dropdown in 'jquery-ui-1.8.16.custom.css (.ui-autocomplete a)', 'invoicesGrid.php (#invOptionsMenu)' */
+    width: 150px;
+    position: absolute;
+    z-index: 1000;
+}
+#invOptionsMenu ul {
+    list-style: none;
+}
+#invOptionsMenu ul li a {
+    /*  See additional styles for dropdown in 'jquery-ui-1.8.16.custom.css (.ui-autocomplete a)', 'invoicesGrid.php (#invOptionsMenu)' */
+    display: block;
+    padding: 10px;
+}
+#invOptionsMenu ul li, #invOptionsMenu ul li, .qs-options-menu ul li {
+    margin: 0 !important;
+}
+#editOptionsMenu, .qs-options-menu {
+    width: 150px;
+    position: absolute;
+    z-index: 1000;
+}
+#editOptionsMenu ul, .qs-options-menu ul {
+    list-style: none;
+}
+#editOptionsMenu ul li a, .qs-options-menu ul li a {
+    /*  See additional styles for dropdown in 'jquery-ui-1.8.16.custom.css (.ui-autocomplete a)', 'invoicesGrid.php (#invOptionsMenu)' */
+    display: block;
+    padding: 10px;
+}
+/******************************************************************
+ Date Picker
+******************************************************************/
+
+.dateWrapper {
+    position: relative;
+}
+.dateWrapper:after {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -332px -129px;
+    display: block;
+    float: right;
+    top: 7px;
+    /*6px*/
+    right: 8px;
+    /*3%*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+/******************************************************************
+ Auto Complete
+******************************************************************/
+
+.autoCompleteWrapper {
+    position: relative;
+}
+.autoCompleteWrapper:after {
+    content: "";
+    background: url(../images/uiSprites.png) no-repeat -405px -129px;
+    display: block;
+    float: right;
+    top: 8px;
+    /*6px*/
+    right: 8px;
+    /*3%*/
+    width: 31px;
+    height: 22px;
+    position: absolute;
+}
+#tasks .autoCompleteWrapper:after {
+    /*  left: 84.7% !important;*/
+}
+/******************************************************************
+ Tooltip
+******************************************************************/
+
+.ALTtrigger {} #commentUser, #commentInvoiceName, #commentRate, #expenseCategories, #commentMailingAddress, .commentBillTypes {
+    margin-left: 5px;
+    margin-top: -1px;
+}
+.ALTtips {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1);
+    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 65, 98, 1), 0px 0px 5px 2px rgba(0, 0, 0, .3);
+}
+.ALTtip {
+    border: none !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+.ALTtrigger {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.ALTtips {
+    position: absolute;
+    text-transform: none;
+    z-index: 99;
+    /*  width: 370px;*/
+}
+.ALTbox {
+    text-align: left;
+    padding: 15px;
+}
+.ALTbox h1 {
+    margin-bottom: 90px;
+}
+.ALTtipsHeadline {
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-bottom: 6px !important;
+    background: url(UI_elements/images/tooltipHeadlineLine.png) repeat-x bottom;
+}
+.ALTbox p {
+    margin: 0;
+}
+.ALTrounded {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+#quickSearch .ALTtipsWrapper {
+    width: 100%;
+}
+.ALTtipsWrapper {
+    display: inline-block;
+    position: relative;
+}
+.withComment .ALTtipsWrapper {
+    display: inline;
+}
+.ALTtip {
+    border: 13px solid transparent;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.borderLeft {
+    background: url(../images/uiSprites.png) no-repeat -376px -169px;
+}
+.borderRight {
+    background: url(../images/uiSprites.png) no-repeat -372px -131px;
+}
+.borderBottom {
+    background: url(../images/uiSprites.png) no-repeat -372px -131px;
+}
+#quickSearch .ALTtipsWrapper {
+    float: left;
+}
+.quickExpand #quickSearch .ALTtips {
+    display: none;
+}
+#quickSearch .ALTtips {
+    width: auto !Important;
+}
+#quickSearch .ALTbox {
+    padding: 10px 15px;
+}

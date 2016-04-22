@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+
+<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password"></property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sb</property>
+<property name="show_sql">true</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<mapping class="com.demo.vo.BlockProgress"/>
+<mapping class="com.demo.vo.BookingDetail"/>
+<mapping class="com.demo.vo.Employee"/>
+<mapping class="com.demo.vo.EmployeeRole"/>
+<mapping class="com.demo.vo.Inquiry"/>
+<mapping class="com.demo.vo.MeasurementUnit"/>
+<mapping class="com.demo.vo.MemberDetail"/>
+<mapping class="com.demo.vo.PaymentPlan"/>
+<mapping class="com.demo.vo.Project"/>
+<mapping class="com.demo.vo.ProjectFile"/>
+<mapping class="com.demo.vo.ProjectInquiry"/>
+<mapping class="com.demo.vo.ProjectPropertyBlock"/>
+<mapping class="com.demo.vo.ProjectPropertyPlan"/>
+<mapping class="com.demo.vo.ProjectStatus"/>
+<mapping class="com.demo.vo.ProjectType"/>
+<mapping class="com.demo.vo.PropertyDetail"/>
+<mapping class="com.demo.vo.PropertyType"/>
+<mapping class="com.demo.vo.State"/>
+
+
+</session-factory>
+</hibernate-configuration>
+                                         

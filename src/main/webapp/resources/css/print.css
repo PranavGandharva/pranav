@@ -1,0 +1,6 @@
+/******************************************************************
+ Invoices
+******************************************************************/
+.invoicePreview #fallr-wrapper, .invoicePreview #message, .invoice #fallr-wrapper, .invoice #message  {
+	display: none;
+}

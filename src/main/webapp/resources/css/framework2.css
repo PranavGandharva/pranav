@@ -1,0 +1,1884 @@
+/******************************************************************
+ XHTML, HTML4, HTML5 Reset
+******************************************************************/
+
+.a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+p {
+    margin-bottom: 15px;
+}
+b, strong {
+    font-weight: 700;
+}
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+li {
+    display: list-item;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td, caption {
+    font-weight: 400;
+    vertical-align: top;
+    text-align: left;
+}
+svg {
+    overflow: hidden;
+}
+/******************************************************************
+ The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com
+******************************************************************/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row {
+    width: 100%;
+    max-width: 95%;
+    min-width: 768px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+    margin-right: 3.8%;
+    float: left;
+    min-height: 1px;
+}
+.row .onecol {
+    width: 4.85%;
+}
+.row .twocol {
+    width: 13.45%;
+}
+.row .threecol {
+    width: 22.05%;
+}
+.row .fourcol {
+    width: 30.75%;
+}
+.row .fivecol {
+    width: 39.45%;
+}
+.row .sixcol {
+    width: 48%;
+}
+.row .sevencol {
+    width: 56.75%;
+}
+.row .eightcol {
+    width: 65.4%;
+}
+.row .ninecol {
+    width: 75.1%;
+}
+.row .tencol {
+    width: 82.7%;
+}
+.row .elevencol {
+    width: 96.35%;
+}
+.row .twelvecol {
+    width: 100%;
+    float: left;
+}
+.last {
+    margin-right: 0 !important;
+}
+img, object, embed {
+    max-width: 100%;
+}
+.noMaxWidth {
+    max-width: none;
+}
+img {
+    height: auto;
+}
+.shortcutText {
+    font-size: 11px;
+    position: absolute;
+    right: 15px;
+    top: 35%;
+}
+/******************************************************************
+ BEGINNING OF THE DEV. CSS, LOGIN, MENU, and BASIC FRAMEWORK STUFF
+******************************************************************/
+
+#ajaxContent {
+    display: block !important;
+    /*this to fix gmaps*/
+    
+    overflow: visible !important;
+    width: 100%;
+    /*this to fix gmaps*/
+    
+    height: 100%;
+}
+/* Added to show the left side shadow of elements inside the .row class SP */
+
+#toppanel {
+    font-family: 'PerspectiveSansRegular', Arial, sans-serif;
+    font-size: 1em;
+    position: relative;
+    /* Panel will "push" the content down */
+    
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid black;
+    z-index: 4;
+}
+#panel {
+    width: 100%;
+    min-width: 768px;
+    /*  height: 300px;*/
+    
+    color: #666;
+    -moz-box-shadow: inset 0px 1px 6px 0px rgba(89, 174, 216, .4), inset 0px 0px 0px 0px rgba(89, 174, 216, 1);
+    -webkit-box-shadow: inset 0px 1px 6px 0px rgba(89, 174, 216, .4), inset 0px 0px 0px 0px rgba(89, 174, 216, 1);
+    box-shadow: inset 0px 1px 6px 0px rgba(89, 174, 216, .4), inset 0px 0px 0px 0px rgba(89, 174, 216, 1);
+}
+#panel, h2.jdash-header, .ui-datepicker-title, .fancyboxTitle, #fallrHeadline, .ui-dialog .ui-dialog-titlebar {
+    border-bottom: 1px solid #00314b;
+    /* http://www.colorzilla.com/gradient-editor/#0b85c4+0,004875+100;Custom 0,72,117,1 */
+    
+    background: -moz-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(11, 133, 196, 1)), color-stop(100%, rgba(17, 94, 143, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%) 0 0;
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(to bottom, rgba(11, 133, 196, 1) 0%, rgba(17, 94, 143, 1) 100%);
+    /* W3C */
+    /*  border-top: 1px solid #59aed8;*/
+}
+#panel h1 {
+    font-size: 1.6em;
+    padding: 5px 0 10px;
+    margin: 0;
+    color: white;
+}
+#panel h2 {
+    font-size: 1.2em;
+    padding: 10px 0 5px;
+    margin: 0;
+    color: white;
+}
+#panel p {
+    margin: 5px 0;
+    padding: 0;
+}
+#panel a {
+    text-decoration: none;
+    position: relative;
+}
+#panel a:hover {} #panel a-lost-pwd {
+    display: block;
+    float: left;
+}
+/******************************************************************
+ Homepage Login
+******************************************************************/
+
+.loginPage #panel {
+    padding: 55px 0;
+}
+#loginLogo {
+    margin: 0 auto;
+    width: 800px;
+}
+#homePageLogin {
+    width: 762px;
+    margin: 15px auto 0;
+}
+#homePageLogin form {
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+#homePageLogin #username {
+    margin-right: 15px;
+}
+/*HACK TO REMOVE YELLOW BACKGROUND FROM CHROME AUTOFILL. THIS ONLY SETS A COLOR IT STILL DOES NOT LOOK PERFECT, BUT BETTER THAN THE YELLOW COLOR. */
+
+#homePageLogin input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #eaeaea inset;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+#homePageLogin input {
+    width: 310px;
+    margin: 10px 0;
+    border: 1px solid #0074b0;
+    -moz-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    -webkit-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+}
+#homePageLogin button {
+    margin: 10px 0;
+    border: 1px solid #0074b0;
+    -moz-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    -webkit-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+}
+#homePageLogin button:hover {
+    margin: 10px 0;
+    border: 1px solid #0074b0;
+    -moz-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset, inset 0px -3px 0px 0px rgba(255, 255, 255, .6);
+    -webkit-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset, inset 0px -3px 0px 0px rgba(255, 255, 255, .6);
+    box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset, inset 0px -3px 0px 0px rgba(255, 255, 255, .6);
+}
+#homePageLogin input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    min-width: 0;
+    padding: 0 !important;
+    margin-top: 6px;
+    margin-right: 5px;
+    border: 1px solid #0074b0;
+    -moz-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    -webkit-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    float: left;
+}
+#homePageLogin #rememberMe {
+    margin: 0 20px 0 0;
+    float: left;
+    width: 400px;
+}
+#homePageLogin p {
+    color: #FFF;
+    font-size: .9em;
+    float: left;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    text-align: left;
+}
+#homePageLogin p a {
+    color: #FFF;
+    border-bottom: 2px solid #f2f2f2;
+}
+#homePageLogin p a:hover {
+    color: #d2d2d2;
+}
+#loginForm .submit {
+    padding: 17px 18px 19px;
+    float: right;
+    max-height: 55px;
+    font-size: 1em;
+}
+/* Page Guide Tour
+--------------------------*/
+
+#stepByStep {
+    position: relative;
+    max-width: 570px;
+}
+#howToTitle {
+    text-align: center;
+}
+#stepOne, #stepTwo, #stepThree {
+    margin-bottom: 20px;
+    width: 85%;
+    display: table;
+}
+#stepByStep p, #stepByStep .text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+#stepByStep p {
+    padding-left: 10px;
+}
+#stepByStep .pink {
+    float: left;
+    font-size: 29px;
+    line-height: 0;
+    margin-top: 13px;
+}
+#stepByStep img {
+    max-width: initial;
+}
+#stepOne img {
+    float: left;
+    margin-right: 20px;
+}
+#stepTwo img {
+    float: right;
+    margin-left: 20px;
+}
+#stepThree img {
+    margin-right: 20px;
+    float: left;
+}
+#twoBottom {
+    display: none !important;
+}
+#topLine, #bottomLine {
+    position: absolute;
+    z-index: -1;
+}
+#topLine {
+    right: 220px;
+    top: 217px;
+}
+#bottomLine {
+    right: 244px;
+    bottom: 149px;
+}
+/******************************************************************
+ Forget/Change Password
+******************************************************************/
+
+.loginPage #fancybox-content, .forgetPasswordPage, .changePasswordPage {
+    background: white;
+}
+.forgetPasswordPage .fancyboxTitle, .changePasswordPage .fancyboxTitle {
+    color: white !important;
+    text-shadow: 0 1px #004162 !important;
+    padding: 1em 1.2em 1.0em !Important;
+}
+#forgetPasswordForm, #changePasswordForm {
+    margin: 20px;
+}
+#forgetPasswordForm input, #changePasswordForm input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 17px 18px 16px !Important;
+    float: left;
+}
+#forgetPasswordForm input {
+    width: 37%;
+}
+.forgetPasswordPage .submit, .changePasswordPage .submit {
+    padding: 15px 18px 15px;
+    max-height: 55px;
+    font-size: 1em;
+    margin-right: 0;
+    margin-top: 0;
+}
+.forgetPasswordPage .submit {
+    float: left;
+}
+.changePasswordPage .submit {
+    float: right;
+    margin-right: 1px;
+}
+#changePasswordForm input {
+    width: 32%;
+}
+#changePasswordForm #newPassword {
+    margin-right: 0;
+}
+/******************************************************************
+ Homepage News
+******************************************************************/
+
+.loginPage #wrapper.row {
+    width: 97%;
+    margin: 10px auto;
+}
+.homePageNews .readMore {
+    float: none;
+    margin: 0 0 20px 29%;
+    padding: 10px 16px 11px;
+    font-size: .8em;
+    min-width: 90px;
+}
+/******************************************************************
+ Homepage Videos
+******************************************************************/
+
+.homePageVideo {
+    width: 32%;
+    float: left;
+}
+.homePageVideo .videoTitle {
+    font-family: 'PerspectiveSansBold', Arial, Helvetica, sans-serif;
+}
+.homePageVideo:nth-child(odd) {
+    padding-left: 5%;
+}
+.homePageVideo:nth-child(even) {
+    padding-right: 5%;
+}
+.homePageVideo a {
+    display: block;
+    width: 178px;
+    height: 126px;
+    margin: 10px 0;
+    position: relative;
+}
+.homePageVideo a:hover {
+    opacity: .7;
+}
+.homePageVideo img {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 2px solid #d2d2d2;
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, .7);
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, .7);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, .7);
+}
+.playGraphic {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+}
+/******************************************************************
+ Menu Bar
+******************************************************************/
+
+#mainMenu {
+    position: relative;
+    z-index: 1000;
+}
+#panel.topBlueMenu {
+    height: 50px;
+}
+.wrapper_menu {
+    width: 99%;
+    margin: 0 0 0 8px;
+    display: block;
+    position: relative;
+    z-index: 9999;
+}
+.wrapper_menu .menu {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+}
+/* Top blue bar
+--------------------------*/
+
+.menu>li {
+    height: 49px;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-right: 5px;
+    padding: 0 5px 0 5px;
+}
+.menu>li.right {
+    border-left: 0;
+    padding: 0 0 0 7px;
+}
+.menu>li:hover, .menu>li.nodrop:hover {
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 1px;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.menu>li.right:hover {
+    border-left: 0;
+}
+.menu>li.nodrop:hover a {
+    padding-right: 10px !important;
+}
+/* this not really necessary , maybe used for something later SP */
+
+.menu>li:hover a, .menu>li.right:hover a {
+    position: relative;
+    z-index: 11;
+}
+/* this to show the arrow icon on the side */
+
+.menu>li .drop, .menu>li:hover .drop {
+    padding-right: 27px;
+}
+/*Right aligned menu item
+--------------------------*/
+
+.menu>li.right {
+    float: right;
+    right: 10px;
+    margin-right: 0;
+}
+.triggerHREF {
+    display: none;
+}
+/******************************************************************
+ Menu Icons
+******************************************************************/
+
+.menu>li {
+    position: relative;
+}
+.menu>li:after, .menu>li:before, .menu>li:hover:after, .menu>li:hover:before, .menu .reportIcon a:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/uiSprites.png);
+    background-repeat: no-repeat;
+}
+/* Down arrow icon
+--------------------------*/
+
+.menu>li:before {
+    width: 14px;
+    height: 14px;
+    background-position: -293px -52px;
+    top: 17px;
+    right: 16px;
+}
+.menu>li:hover:before {
+    background-position: -293px -52px;
+}
+.menu>li.nodrop:before {
+    display: none;
+}
+.menu>li:after, .menu>li:hover:after {
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 6px;
+}
+.menu>li.right:before {
+    right: 9px;
+}
+
+.menu>li:nth-child(1):after {
+    background-position: -6px -9px;
+}
+.menu>li:nth-child(1):hover:after, .menu>.activeLink:nth-child(1):after {
+    background-position: -6px -49px;
+}
+
+.menu>li:nth-child(3):after {
+    background-position: -47px -9px;
+}
+.menu>li:nth-child(3):hover:after, .menu>.activeLink:nth-child(3):after {
+    background-position: -47px -49px;
+}
+.menu>li:nth-child(2):after {
+    background-position: -206px -9px;
+}
+.menu>li:nth-child(2):hover:after, .menu>.activeLink:nth-child(2):after {
+    background-position: -206px -49px;
+}
+
+/* Welcome User
+--------------------------*/
+
+.menu>li:nth-child(10):after {
+    display: none;
+}
+.menu .reportIcon a:before {
+    width: 14px;
+    height: 20px;
+    top: 10px;
+    left: 14px;
+    z-index: 13;
+    background-position: -533px -9px;
+}
+.menu .reportIcon a:hover:before, .menu .reportIcon a.activeLink:before {
+    background-position: -533px -49px;
+}
+/******************************************************************
+ Drop Down Menu
+******************************************************************/
+/* Left & right aligned common styles
+--------------------------*/
+
+.menu .dropdown_1column, .menu .dropdown_2columns, .menu .dropdown_3columns, .menu .dropdown_4columns, .menu .dropdown_5columns, .menu .dropdown_fullwidth {
+    display: none;
+    margin: 0 auto;
+    left: 0;
+    top: 49px;
+    border-top: 1px solid #00314B;
+    position: absolute;
+    text-align: left;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: #0074B0;
+    -moz-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+/* Drop Downs Sizes
+--------------------------*/
+
+.menu .dropdown_1column {
+    width: 220px;
+}
+.menu .dropdown_2columns {
+    width: 260px;
+}
+.menu .dropdown_3columns {
+    width: 455px;
+}
+.menu .dropdown_4columns {
+    width: 610px;
+}
+.menu .dropdown_5columns {
+    width: 765px;
+}
+.menu>li:nth-child(2) .dropdown_5columns {
+    width: 719px;
+}
+/* Columns Sizes and Styling
+--------------------------*/
+
+.menu .col_1, .menu .col_2, .menu .col_3, .menu .col_4, .menu .col_5, .menu .col_6 {
+    float: left;
+    background: #f0f0f0;
+    padding: 17px 15px;
+}
+.menu .col_1 {
+    width: 135px;
+}
+.menu .col_2 {
+    width: 305px;
+    /*290px*/
+}
+.menu .col_3 {
+    width: 445px;
+}
+.menu .col_4 {
+    width: 600px;
+}
+.menu .col_5 {
+    width: 755px;
+}
+.menu .col_6 {
+    width: 910px;
+}
+.menu>li:nth-child(3) .col_2, .menu>li:nth-child(4) .col_2, .menu>li:nth-child(6) .col_1 {
+    margin: 0;
+    width: 100%;
+}
+.menu>li:nth-child(2) .col_1 {
+    width: 133px;
+    padding: 0 0 0 20px;
+}
+.menu>li:nth-child(2) .col_2 {
+    width: 290px;
+    padding: 0;
+}
+.menu>li:nth-child(2) .col_3, .menu>li:nth-child(3) .col_2.lastcolumn, .menu>li:nth-child(4) .col_2.lastcolumn, .menu>li:nth-child(5) .col_1, .menu > li:nth-child(5) .col_2.lastcolumn {
+    -moz-box-shadow: -5px 0px 10px 3px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: -5px 0px 10px 3px rgba(0, 0, 0, .1);
+    box-shadow: -5px 0px 10px 3px rgba(0, 0, 0, .1);
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    float: right;
+}
+.menu>li:nth-child(2) .col_3 {
+    width: 429px;
+    /*399px*/
+    
+    height: 440px;
+}
+.menu>li:nth-child(3) .col_3 {
+    width: 445px;
+}
+.menu>li:nth-child(3) .col_2.lastcolumn {
+    min-height: 330px;
+}
+.menu>li:nth-child(4) .col_2.lastcolumn {
+    width: 305px;
+    /*290px*/
+    
+    height: 300px;
+}
+.menu>li:nth-child(5) .col_1 {
+    width: 135px;
+    height: 154px;
+}
+.menu>li:nth-child(5) .col_2.lastcolumn {
+    min-height: 250px;
+}
+/* Showing Drop Down on Mouse Hover - Left aligned */
+
+.dropdown_1column, .dropdown_2columns, .dropdown_3columns, .dropdown_4columns, .dropdown_5columns {
+    left: 0px;
+    top: 51px;
+    display: none;
+    /* we will show it using hoverIntent and slideDown */
+}
+/* Showing Drop Down on Mouse Hover - Right aligned */
+
+.menu li .align_right {
+    display: none;
+    left: auto;
+    right: -1px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.align_right {
+    left: auto;
+    right: 0px;
+    top: 51px;
+}
+/* IMPORTANT */
+/* Use the firstcolumn class for the items that stick to the left edge of the dropdown */
+
+.menu .firstcolumn {
+    margin-left: 0;
+    /* Clearing margin & left */
+    
+    clear: left;
+    padding: 0;
+    background: none !important;
+}
+/* Inside the sub panel content reset */
+
+.menu ul li {
+    list-style: none;
+    color: #FFF;
+    text-shadow: 0 1px #004162;
+    position: relative;
+}
+.menu ol {
+    color: #666;
+    margin: 3px 0 0 25px;
+    text-shadow: 0 1px white;
+}
+.menu ol li {
+    list-style: decimal;
+}
+.menu li>a {
+    color: #FFF !important;
+    outline: 0;
+    padding: 16px 10px 15px 30px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 0 2px #004162;
+}
+.menu li.right>a {
+    padding-right: 27px;
+    padding-left: 10px;
+}
+.menu li.right:hover>a {}
+/* In case there are links in the paragraphs or lists and are not sub menu links */
+
+.menu li:hover div>p a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.menu p, .menu h6, .tweets ul li {
+    color: #666;
+    text-shadow: 0 1px white;
+}
+.menu h6 {
+    font-size: 16px;
+}
+.subMenu {
+    width: 100%;
+}
+.subMenu a {
+    padding: 13px 15px !important;
+}
+.subMenu li a {} .subMenu .subMenu a {
+    padding-left: 35px !important;
+}
+.menu>li:nth-child(2) .subMenu, .menu>li:nth-child(3) .subMenu, .menu>li:nth-child(6) .subMenu {
+    margin: 0;
+    width: 100%;
+}
+.subMenu .reportIcon a::before {
+    height: 22px !important;
+}
+.menu>li:nth-child(2) li:last-child a:hover, .menu>li:nth-child(2) li:last-child a.activeLink, .menu>li:nth-child(3) li:last-child a:hover, .menu>li:nth-child(3) li:last-child a.activeLink, .menu>li:nth-child(6) li:last-child a:hover, .menu>li:nth-child(6) li:last-child a.activeLink {
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius: 0px 0px 2px 2px;
+}
+.subMenu>li>a:hover, .menu > li:hover, .menu > li.nodrop:hover, .subMenu a.activeLink, .menu>.activeLink {
+    color: white;
+    text-shadow: 0 1px #004162 !important;
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(26, 153, 218, .7);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(26, 153, 218, .7);
+    box-shadow: inset 0px 1px 0px 0px rgba(26, 153, 218, .7), inset 0px -1px 0px 0px rgba(0, 0, 0, .4);
+    /* http://www.colorzilla.com/gradient-editor/#105c94+0,004162+100;Custom */
+    
+    background: #005c8c;
+}
+.subMenu a.activeLink, .menu>.activeLink {
+    cursor: default;
+}
+/* Menu Tweets
+--------------------------*/
+
+.tweets {
+    margin-top: 4px;
+}
+.var-narrow .timeline-header, .var-narrow .timeline-footer {
+    display: none !important;
+}
+.tweet {
+    background: #f0f0f0 !important;
+    border-bottom: 1px solid #e8e8e8 !important;
+}
+.tweet-actions {
+    background: #f0f0f0 !important;
+}
+.customisable-border {
+    border: none !important;
+}
+.tweet:last-child {
+    border-bottom: none !important;
+}
+/******************************************************************
+ Sub Menu Videos
+******************************************************************/
+
+a.subMenuVideo {
+    display: block;
+    width: 120px;
+    height: 80px;
+    background: url(../images/homePageVideo.jpg) no-repeat center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 2px solid #d2d2d2;
+    margin: 10px 0 !important;
+    padding: 0 !important;
+}
+a.subMenuLink {
+    display: block;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 2px solid #d2d2d2;
+    margin: 10px 0 5px !important;
+    padding: 0 !important;
+}
+/* System Workflow
+--------------------------*/
+
+#workflowDescription {
+    position: absolute;
+    right: 26px;
+    top: 17px;
+    width: 170px;
+    z-index: 1;
+}
+#workFlowWrapper {
+    position: relative;
+}
+#workFlowWrapper div {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 62px;
+}
+#workFlowWrapper a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#workClients {
+    top: 10px;
+    left: 74px;
+}
+#workEstimates {
+    top: 101px;
+    left: 4px;
+}
+#workProjects {
+    top: 101px;
+    left: 143px;
+}
+#workTime {
+    top: 225px;
+    left: 69px;
+}
+#workInvoices {
+    top: 225px;
+    left: 206px;
+}
+#workPayments {
+    top: 225px;
+    right: 0px;
+}
+#workQuickBookSync {
+    top: 316px;
+    left: 206px;
+}
+#workFlowWrapper .ALTtips {
+    width: 160px !Important;
+    height: 33px !Important;
+    display: none;
+}
+#workFlowWrapper .ALTbox {
+    padding: 2px 16px 0 !Important;
+    text-align: center !Important;
+}
+#workFlowWrapper .ALTtip {
+    right: -16px;
+    top: 5px;
+    background: url(../images/uiSprites.png) no-repeat -376px -169px;
+}
+#workFlowWrapper p {
+    color: white;
+    width: 130px !important;
+    text-shadow: 0 1px #004162;
+}
+#flowClientsTooltip {
+    top: 23px;
+    left: -109px;
+}
+#flowEstimatesTooltip {
+    top: 113px;
+    left: -176px;
+}
+#flowProjectsTooltip {
+    top: 113px;
+    left: -38px;
+}
+#flowTimeTooltip {
+    left: -109px;
+    top: 238px;
+}
+#flowInvoicesTooltip {
+    right: 210px;
+    top: 238px;
+}
+#flowPaymentsTooltip {
+    right: 80px;
+    top: 238px;
+}
+#flowQuickBookSyncTooltip {
+    left: 28px;
+    bottom: 21px;
+    height: 33px;
+}
+a.subMenuWorkFlow {
+    width: 205px;
+    height: 140px;
+}
+a.subMenuVideo:hover {
+    display: block;
+    width: 120px;
+    height: 80px;
+    margin: 0 auto;
+    margin: 10px 0 !important;
+    padding: 0px !important;
+    background: url(../images/homePageVideoHover.jpg) no-repeat center;
+}
+/******************************************************************
+ Favorites Menu
+******************************************************************/
+
+#favoriteLinks {
+    width: 100%;
+    min-width: 768px;
+}
+#favoriteLinks, #quickSearchTitle {
+    /* http://www.colorzilla.com/gradient-editor/#2b2b2d+16,000000+99;Custom */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, -moz-linear-gradient(top, #2b2b2d 16%, #000000 99%);
+    /* FF3.6+ */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, -webkit-gradient(linear, left top, left bottom, color-stop(16%, #2b2b2d), color-stop(99%, #000000));
+    /* Chrome,Safari4+ */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, -webkit-linear-gradient(top, #2b2b2d 16%, #000000 99%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, -o-linear-gradient(top, #2b2b2d 16%, #000000 99%);
+    /* Opera 11.10+ */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, -ms-linear-gradient(top, #2b2b2d 16%, #000000 99%);
+    /* IE10+ */
+    
+    background: url(../images/uiXSprites.png) repeat-x 0 -1900px, linear-gradient(to bottom, #2b2b2d 16%, #000000 99%);
+    /* W3C */
+    /*  border-top:1px solid #5c5c5c;
+    background: #2b2b2d;
+    border-bottom:1px solid #5c5c5c;
+*/
+}
+#favoriteLinks .row {
+    max-width: 99%;
+    min-width: 758px !Important;
+}
+#favoriteLinks ul {
+    margin: 0;
+}
+#favoriteLinks ul li {
+    list-style: none;
+    padding: 0;
+    margin-top: 1px;
+    margin-right: 15px;
+}
+#favoriteLinks ul li:first-child {
+    margin-left: 3px;
+}
+#favoriteLinks .quickSearch {
+    padding: 6px 12px 5px 24px;
+}
+#favoriteLinks .floatRight {
+    margin-right: 9px;
+}
+#favoriteLinks ul li:hover, #favoriteLinks .activeLink {
+    /* http://www.colorzilla.com/gradient-editor/#eaeaea+0,bfbfbf+100;Custom */
+    
+    background: -moz-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(191, 191, 191, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(234, 234, 234, 1)), color-stop(100%, rgba(191, 191, 191, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(191, 191, 191, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(191, 191, 191, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(191, 191, 191, 1) 100%);
+    /* IE 10+ */
+    
+    background: linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(191, 191, 191, 1) 100%);
+    /* W3C */
+}
+#favoriteLinks ul li:hover a, #favoriteLinks .activeLink a {
+    color: black;
+    text-shadow: 0 1px white !important;
+}
+#favoriteLinks ul li a {
+    color: #fff;
+    text-shadow: 0px 1px #000;
+    padding: 6px 8px 5px;
+    font-size: .9em;
+    display: block;
+}
+/******************************************************************
+ Sidebar Nav Menu
+******************************************************************/
+
+#sidebarNav {
+    font-family: 'PerspectiveSansRegular', Arial, sans-serif;
+    background: #f0f0f0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 99999px;
+    /* EQUAL HEIGHT COLUMNS HACK - CSS Tricks */
+    
+    margin-bottom: -99999px;
+    z-index: 1;
+    margin-right: 2.8% !important;
+}
+#sidebarNav:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: white;
+    right: 0;
+    z-index: 4;
+}
+#sidebarNav:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: -3px;
+    right: -10px;
+    z-index: 1;
+    -moz-box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, .1);
+    box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, .1);
+}
+#sidebarNav a {
+    color: #666;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(219, 218, 218, .5);
+    border-top: 1px solid rgba(251, 250, 250, .3);
+    position: relative;
+}
+#sidebarNav a.activeLink {} #sidebarNav a:hover, #sidebarNav a.activeLink {
+    /* See UI elements file for rest of styles '.blueButton' */
+    
+    border: 0;
+    border-bottom: 1px solid #dbdada;
+    border-top: 1px solid #1a99da;
+}
+#sidebarNav a.activeLink:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 37%;
+    right: 1px;
+    border-width: 8px;
+    border-style: solid;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: white !important;
+}
+#sidebarNav ul ul a {
+    padding-Left: 33px;
+}
+#sidebarNav ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+}
+#sidebarNav ul ul {
+    margin-Left: 0;
+    padding-left: 0;
+}
+#lastLinks li:first-child a {
+    padding-top: 18px;
+}
+#firstLinks li:first-child a, #lastLinks li:first-child a {
+    border-top: 0;
+}
+#firstLinks ul.subLinks a, #lastLinks ul.subLinks a {
+    padding-top: 15px;
+}
+#firstLinks {
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1);
+    /* 0px 1px 15px 0px rgba(0, 0, 0, .2)*/
+}
+#firstLinks {
+    position: relative;
+    z-index: 2;
+}
+#firstLinks .reportIcon a {
+    padding-left: 42px !important;
+}
+#firstLinks .reportIcon a:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url(../images/uiSprites.png);
+    background-repeat: no-repeat;
+}
+#firstLinks .reportIcon a:before {
+    width: 14px;
+    height: 23px;
+    top: 13px;
+    left: 20px;
+    z-index: 13;
+    background-position: -893px -9px;
+}
+#firstLinks .reportIcon a:hover:before, #firstLinks .reportIcon a.activeLink:before {
+    background-position: -893px -49px;
+}
+#lastLinks {
+    position: relative;
+    z-index: 1;
+}
+#lastLinks a {
+    padding-Left: 37px;
+    font-size: 0.9em;
+}
+#lastLinks>li>a:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/uiSprites.png);
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 14px;
+}
+#lastLinks li:first-child a:before {
+    background-position: -450px -13px;
+    top: 18px;
+}
+#lastLinks li:first-child a:hover:before {
+    background-position: -450px -53px;
+}
+#lastLinks li:nth-child(2) a:before {
+    background-position: -369px -13px;
+}
+#lastLinks li:nth-child(2) a:hover:before {
+    background-position: -369px -53px;
+}
+#lastLinks li:nth-child(3) a:before {
+    background-position: -410px -13px;
+}
+#lastLinks li:nth-child(3) a:hover:before {
+    background-position: -410px -53px;
+}
+#lastLinks li:nth-child(4) a:before {
+    background-position: -490px -13px;
+}
+#lastLinks li:nth-child(4) a:hover:before {
+    background-position: -490px -53px;
+}
+#lastLinks #tlypageguideCustomLink:before {
+    background: transparent url(../images/pageGuideImages/tlyguide/tlyguide_iconMini.png) 0 0 no-repeat;
+}
+#lastLinks #tlypageguideCustomLink:hover:before, #lastLinks #tlypageguideCustomLink.activeLink:before {
+    background: transparent url(../images/pageGuideImages/tlyguide/tlyguide_iconMiniHover.png) 0 0 no-repeat;
+}
+/* Expand/Collapse Sidebar
+--------------------------*/
+
+#closeSidebar {
+    position: relative;
+    float: right;
+    margin: 10px 25px 100px 0;
+}
+.closeLink, .hideLink {
+    display: block;
+    position: absolute;
+    padding: 0 !Important;
+    border: 0 !Important;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+}
+.expand .closeLink, .expand .hideLink {
+    background: url(../images/uiSprites.png) no-repeat -932px -9px;
+}
+.expand .closeLink:hover, .expand .hideLink:hover {
+    background: url(../images/uiSprites.png) no-repeat -932px -49px !important;
+}
+.collapse .closeLink {
+    background: url(../images/uiSprites.png) no-repeat -974px -9px;
+}
+.collapse .hideLink {
+    background: url(../images/uiSprites.png) no-repeat -1010px -10px;
+}
+.collapse .closeLink:hover {
+    background: url(../images/uiSprites.png) no-repeat -974px -49px !important;
+}
+.collapse .hideLink:hover {
+    background: url(../images/uiSprites.png) no-repeat -1010px -49px !important;
+}
+.collapse #lastLinks a {
+    text-indent: -9999px;
+}
+.collapse .shortcutText {
+    display: none;
+}
+.collapse ul ul a {
+    padding-Left: 20px !important;
+}
+.collapse #firstLinks .reportIcon a:before {
+    display: none !important;
+}
+.collapse #firstLinks .reportIcon a {
+    padding-Left: 20px !important;
+}
+.collapse #lastLinks > li > a:before {
+    left: inherit !important;
+    right: 30%;
+}
+#sidebarNav.collapse.hideLink {
+    overflow: visible;
+}
+#sidebarNav.collapse.hideLink:after {
+    display: none;
+}
+.collapse.hideLink #closeSidebar {
+    position: fixed;
+    bottom: 10px;
+    left: 4px;
+}
+/******************************************************************
+ Interior Pages
+******************************************************************/
+
+#contentWrapper {
+    position: relative;
+    margin-bottom: 100px;
+}
+#contentWrapper form {
+    margin-top: 0px;
+}
+#contentWrapper.ninecol .fivecol, #contentWrapper.ninecol .elevencol, #contentWrapper.ninecol .twelvecol {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 99999px;
+    /* EQUAL HEIGHT COLUMNS HACK - CSS Tricks */
+    
+    margin-bottom: -99999px;
+}
+#contentWrapper.ninecol .fivecol.noShadow:after {
+    display: none;
+}
+#contentWrapper.ninecol .elevencol:after {
+    left: -5.6%;
+}
+#contentWrapper.ninecol .twelvecol:after {
+    left: -5.1%;
+}
+#contentWrapper.ninecol .sevencol.last {
+    background: #f0f0f0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 99999px;
+    /* EQUAL HEIGHT COLUMNS HACK - CSS Tricks */
+    
+    margin-bottom: -99999px;
+}
+#contentWrapper.ninecol .sevencol.last:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: -3px;
+    left: -22px;
+    z-index: 1;
+    -moz-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, .1);
+    box-shadow: 3px 0px 13px 0px rgba(0, 0, 0, .1);
+}
+#contentWrapper.ninecol .sevencol.last.grid {
+    padding-top: 11px;
+}
+#contentWrapper.ninecol .sevencol.last>.creativetbl_container {
+    margin: 0 20px;
+}
+#contentWrapper.ninecol .fivecol sup, #contentWrapper.ninecol .fivecol sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+    font-size: 9px;
+}
+#contentWrapper.ninecol .fivecol h3, #contentWrapper.ninecol .fivecol hr, #contentWrapper.ninecol .fivecol form legend {
+    width: 100%;
+}
+#contentWrapper.ninecol .fivecol sub {
+    top: 0.4em;
+}
+#contentWrapper.ninecol .fivecol ol {
+    display: block;
+    margin-bottom: 20px;
+}
+#contentWrapper.ninecol .fivecol ol li, #contentWrapper.ninecol .elevencol ol li {
+    list-style: none;
+    display: block;
+    margin-bottom: 15px;
+}
+#contentWrapper.ninecol .fivecol>form .editSettings {
+    float: right;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+#contentWrapper.ninecol .fivecol>form .selectSettings {
+    float: right;
+    margin-top: 4px;
+}
+#contentWrapper.ninecol .gridHeader .clearSelection {
+    margin-top: 6px;
+}
+#contentWrapper.ninecol .fivecol .preview {
+    float: right;
+}
+.preview, .invOption, .clearSelection {
+    cursor: pointer;
+    max-width: none;
+}
+#contentWrapper.ninecol .fivecol label {
+    display: block;
+    float: none;
+    margin: 0px 0px 3px 0px;
+    text-align: left;
+    width: 100%;
+}
+#contentWrapper.ninecol .fivecol input, #contentWrapper.ninecol .fivecol textarea {
+    /*  width: 92%;*/
+    
+    float: none;
+}
+#contentWrapper.ninecol .fivecol input[type="checkbox"], #contentWrapper.ninecol .fivecol input[type="radio"] {
+    margin: 1px 10px 1px 0 !important;
+    width: 16px !important;
+    height: 16px;
+    float: left !important;
+}
+#contentWrapper.ninecol .fivecol input[type="radio"] {
+    width: 14px !important;
+}
+#contentWrapper.ninecol .fivecol button {
+    float: none;
+    margin-top: 10px;
+}
+/*
+#contentWrapper.ninecol .fivecol select {
+    width:98% !important;
+}
+*/
+
+#contentWrapper.ninecol .fivecol select#template {
+    width: 90%;
+    /* !important */
+}
+#contentWrapper.ninecol .fivecol select.selectControls {
+    width: 94% !important;
+}
+#contentWrapper.ninecol .fivecol select.selectControls.newIconWidth {
+    width: 87% !important;
+}
+.ui-tabs-panel.ui-widget-content .fivecol {
+    padding-top: 10px !important;
+}
+.emptyLI {
+    margin-bottom: 0 !Important;
+}
+#contentWrapper.ninecol #newProject .onecol {
+    /*  margin-right: 10%;*/
+    
+    width: 29.5%;
+    /*23.3%*/
+}
+.buttonWrapper.tencol {
+    margin-right: 0;
+    text-align: left;
+    width: 86%;
+    /*87.7%*/
+}
+.fivecol.extraRightPadding {
+    margin-right: 8% !important;
+}
+/******************************************************************
+ Media Queries
+******************************************************************/
+
+@media only screen and (max-width: 1170px) {
+    .hideExtraText {
+        display: none;
+    }
+    #favoriteLinks .hide, #panel .right a.drop .hide {
+        display: inline;
+    }
+    /* Tabs Styles
+--------------------------*/
+    
+    #contentWrapper .ui-tabs .ui-tabs-nav li a {
+        width: 118px !important;
+        text-align: center;
+        padding: .8em 1em !Important;
+        white-space: normal !important;
+        line-height: 1.5em !important;
+    }
+    .headlineHR {
+        width: 83.4%;
+    }
+    #taskHRStotalsWrapper {
+        width: 83%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    /* Menu Styles
+--------------------------*/
+    
+    .menu .tabletSize, .tabletSize .quickSearch {
+        text-indent: -9999px;
+    }
+    .tabletSize .quickSearch {
+        padding-Left: 0 !important;
+        width: 13px;
+    }
+    .menu .firstcolumn {
+        width: 210px !Important;
+    }
+    .menu>li:nth-child(10) .firstcolumn {
+        width: 220px !Important;
+    }
+    .menu>li:nth-child(6) .firstcolumn, .menu>li:nth-child(7) .firstcolumn {
+        width: 240px !Important;
+    }
+    .menu .dropdown_5columns {
+        width: 639px !important;
+    }
+    .menu .dropdown_4columns {
+        width: 515px;
+    }
+    .menu .dropdown_3columns {
+        width: 375px;
+    }
+    .menu .dropdown_2columns {
+        width: 240px;
+    }
+    .menu li.nodrop > a, .menu>li:nth-child(2), .menu>li:nth-child(3), .menu>li:nth-child(4), .menu>li:nth-child(5), .menu>li:nth-child(6), .menu>li:nth-child(7) {
+        padding-left: 15px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .menu > li::before {
+        right: 14px;
+    }
+    .menu > li:after, .menu > li:hover:after {
+        width: 30px;
+        height: 30px;
+        top: 11px;
+        left: 12px;
+    }
+    .menu li.right > a.drop {
+        padding-right: 24px !important;
+    }
+    .menu li.nodrop {
+        width: 52px;
+        margin-right: 10px;
+    }
+    /* Dashboard
+--------------------------*/
+    
+    .menu>li:nth-child(1):after {
+        background-position: -566px -6px;
+        left: 17px !Important;
+    }
+    .menu>li:nth-child(1):hover:after {
+        background-position: -566px -45px;
+    }
+    /* Projects
+--------------------------*/
+    
+    .menu>li:nth-child(2):after {
+        background-position: -606px -6px;
+    }
+    .menu>li:nth-child(2):hover:after {
+        background-position: -606px -45px;
+    }
+    /* Time
+--------------------------*/
+    
+    .menu>li:nth-child(3):after {
+        background-position: -646px -6px;
+    }
+    .menu>li:nth-child(3):hover:after {
+        background-position: -646px -45px;
+    }
+    /* Invoicing
+--------------------------*/
+    
+    .menu>li:nth-child(4):after {
+        background-position: -686px -6px;
+    }
+    .menu>li:nth-child(4):hover:after {
+        background-position: -686px -45px;
+    }
+    /* Timecard
+--------------------------*/
+    
+    .timeCard .box-table input.catinput {
+        width: 97.8% !Important;
+    }
+    /* Clients
+--------------------------*/
+    
+    .menu>li:nth-child(5):after {
+        background-position: -726px -6px;
+    }
+    .menu>li:nth-child(5):hover:after {
+        background-position: -726px -45px;
+    }
+    /* Employees
+--------------------------*/
+    
+    .menu>li:nth-child(6):after {
+        background-position: -766px -6px;
+    }
+    .menu>li:nth-child(6):hover:after {
+        background-position: -766px -45px;
+    }
+    /* Setup
+--------------------------*/
+    
+    .menu>li:nth-child(7):after {
+        background-position: -806px -6px;
+    }
+    .menu>li:nth-child(7):hover:after {
+        background-position: -806px -45px;
+    }
+    /* All Reports
+--------------------------*/
+    
+    .menu>li:nth-child(8):after {
+        background-position: -847px -4px;
+    }
+    .menu>li:nth-child(8):hover:after {
+        background-position: -847px -45px;
+    }
+    #firstLinks .shortcutText {
+        position: relative;
+        right: 0 !important;
+        margin-top: 1px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+    /* Framework Styles
+--------------------------*/
+    
+    #contentWrapper.ninecol .fivecol select.newIconWidth {
+        width: 81% !important;
+    }
+    #contentWrapper.ninecol .fivecol select.selectControls {
+        width: 91% !important;
+    }
+    #contentWrapper.ninecol .fivecol select.selectControls.newIconWidth {
+        width: 84% !important;
+    }
+    #contentWrapper.ninecol .fivecol select#template {
+        width: 86%;
+        /* !important*/
+    }
+    #contentWrapper.ninecol .fivecol select {
+        /*  width:102% !important;*/
+    }
+    .buttonWrapper.tencol {
+        width: 100%;
+        /*92.7*/
+    }
+    #contentWrapper .ct_search, #contentWrapper #ct2_search {
+        width: 140px !important;
+    }
+    /* Page Guide Styles
+--------------------------*/
+    
+    #tlyPageGuideWrapper .tlypageguide_toggle {
+        min-width: 143px;
+    }
+    #tlyPageGuideWrapper .tlypageguide_toggle:before {
+        display: none !Important;
+    }
+    #tlyPageGuideWrapper .tlypageguide_toggle div {
+        border-left: 0 !important;
+        width: 94% !important;
+        text-align: center;
+    }
+    /* Invoice Styles
+--------------------------*/
+    
+    #clientJobDropDown {
+        width: inherit !important;
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-width: 1119px) {
+    /* Quick Search Styles
+--------------------------*/
+    
+    #quickSearchWrapper.large #miniSearchButton {
+        display: none !Important;
+    }
+    #quickSearchWrapper.large .shortcutText {
+        right: 45px !Important;
+    }
+}
+@media only screen and (max-width: 930px) {
+    /* Login Styles
+--------------------------*/
+    
+    #homePageLogin {
+        width: 615px;
+    }
+    #newsWrapper {
+        width: 45% !important;
+        padding-left: 1.8% !important;
+    }
+    #homePageLogin input {
+        width: 237px;
+        margin: 10px 0;
+        border: 1px solid #0074b0;
+        -moz-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+        -webkit-box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+        box-shadow: 0px 2px 8px #0b82c2, 0 -2px 0 0 #B3B3B3 inset;
+    }
+    .homePageVideo {
+        width: 40%;
+    }
+    .homePageVideo img {
+        max-width: initial;
+        width: 92%;
+    }
+    /* Page Guide Tour
+--------------------------*/
+    
+    #howtotitle {
+        text-align: left;
+    }
+    #stepOne, #stepTwo, #stepThree {
+        width: 85%;
+        display: block;
+    }
+    #stepByStep p, #stepByStep .text {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+    }
+    #stepByStep p {
+        padding-left: 21px;
+    }
+    #stepByStep .pink {
+        float: left;
+        font-size: 29px;
+        line-height: 0;
+        margin-top: 13px;
+    }
+    #stepByStep img {
+        max-width: initial;
+    }
+    #stepOne img {
+        float: none;
+        margin-right: 0;
+    }
+    #stepTwo img {
+        float: none;
+        margin-left: 0;
+    }
+    #stepThree img {
+        margin-right: 0;
+        float: none;
+    }
+    #twoTop {
+        display: none !important;
+    }
+    #twoBottom {
+        display: block !important;
+    }
+    #topLine, #bottomLine {
+        display: none;
+    }
+    /* Framework
+--------------------------*/
+    
+    #contentWrapper.ninecol .fivecol .ui-combobox input {
+        /*  width: 85.6% !important;*/
+    }
+    #contentWrapper.ninecol .fivecol input, #contentWrapper.ninecol .fivecol textarea {
+        /*  width: 90% !Important;*/
+    }
+    #contentWrapper.ninecol .fivecol button {
+        width: 100%;
+        margin-right: 0;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    #contentWrapper.ninecol .fivecol .uploadWrapper {
+        width: 100%;
+    }
+    #contentWrapper.ninecol .fivecol #upload_area {
+        width: 96.4%;
+    }
+    /* Invoice Styles
+--------------------------*/
+    
+    ol#invoiceClientInfo .inputWrapper a {
+        right: -16px !important;
+    }
+    .menu li > a.drop {
+        padding: 16px 44px 15px 0px !important;
+    }
+    .menu li.nodrop, .menu > li:nth-child(2), .menu > li:nth-child(3), .menu > li:nth-child(4), .menu > li:nth-child(5), .menu > li:nth-child(6), .menu > li:nth-child(7) {
+        margin-left: 0 !Important;
+        margin-right: 0 !Important;
+    }
+    .menu li.nodrop > a, .menu > li:nth-child(2), .menu > li:nth-child(3), .menu > li:nth-child(4), .menu > li:nth-child(5), .menu > li:nth-child(6), .menu > li:nth-child(7) {
+        padding-right: 15px;
+    }
+    /* Timecard Styles
+--------------------------*/
+    
+    .timeCard .box-table input.taskinput {} .timeCard .box-table input.catinput {}
+}
+@media handheld, only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        -webkit-text-size-adjust: none;
+    }
+    #contentWrapper.ninecol .fivecol select.selectControls {
+        width: 91% !important;
+    }
+    /* New Project Styles
+--------------------------*/
+    
+    #contentWrapper.ninecol #newProject .onecol {
+        margin-right: 11.5%;
+        width: 21.7%;
+    }
+    #billTasks .rate.currency, #billTasksEditMode .rate.currency, .typeSchedule select {
+        width: 68% !Important;
+    }
+    #billTasks .typeLabel {
+        width: 24% !important;
+    }
+    /* Timecard Styles
+--------------------------*/
+    
+    .timeCard .box-table input.taskinput {}
+    /* Sidebar Styles
+--------------------------*/
+    
+    .collaspse #lastLinks > li > a:before {
+        left: 19% !important;
+        right: inherit !Important;
+    }
+}
+.menu li a.numberClients {
+    padding: 0 !important;
+    display: inline !important;
+    color: #1a99da !important;
+    text-shadow: none !important;
+}
+.clientProjects {
+    font-size: 0.85em;
+}
+#searchInfoLink {
+    text-align: center;
+}

@@ -1,0 +1,97 @@
+/*********************
+ SASS Variables
+*********************/
+/* Font
+--------------------------*/
+$defaultFontSize: 13px;
+
+
+/* Text Color
+--------------------------*/
+/* blue */
+$lightBlue: #1a99da;
+$mediumBlue: #0074b0;
+$darkBlue: #004162;
+
+/* netural */
+$black: #000;
+$white: #fff;
+
+/* gray */
+$tooLightGray: #f0f0f0;
+$lightGray: #dbdbdb;
+$mediumGray: #666;
+$darkGray: #333;
+
+/* green */
+$lightGreen: #10d514;
+$mediumGreen: #0a700c;
+$darkGreen: #003300;
+
+/* red */
+$lightRed: #f65c4b;
+$mediumRed: #a82618;
+$darkRed: #520c04;
+
+/* yellow */
+$yellow: #e8e61f;
+
+/* pink */
+$pink: #ec0172;
+
+
+/* Background Color
+--------------------------*/
+/* black */
+$mediumBlackBg: #414141;
+
+/* green */
+$mediumGreenBg: #278b27;
+
+/* red */
+$mediumRedBg: #c21b09;
+
+
+/* Box Shadow
+--------------------------*/
+$boxShadowBlack01: 0px 1px 0px 0px rgba(0, 0, 0, .1);
+$boxShadowWhite05: 0px 2px 0px 0px rgba(255, 255, 255, .5);
+
+/* Mixin
+--------------------------*/
+/* Font
+--------------------------*/
+@mixin perspectiveSansFont {
+	font-family: 'PerspectiveSansRegular', Arial, Helvetica, sans-serif;
+}
+@mixin perspectiveSansBoldFont {
+	font-family: 'PerspectiveSansBold', Arial, Helvetica, sans-serif;
+}
+@mixin arialFont {
+	font-family: Arial, Helvetica, sans-serif;
+}
+@mixin borderRadius5 {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+@mixin borderRadiusTop5 {
+	-moz-border-radius: 5px 5px 0px 0px !Important;
+	-webkit-border-radius: 5px 5px 0px 0px !Important;
+	border-radius: 5px 5px 0px 0px !Important;
+}
+@mixin borderRadiusLeft5 {
+	-moz-border-radius: 5px 0px 5px 0px !Important;
+	-webkit-border-radius: 5px 0px 5px 0px !Important;
+	border-radius: 5px 0px 5px 0px !Important;
+}
+@mixin borderRadiusRight5 {
+	-moz-border-radius: 0px 5px 5px 0px !Important;
+	-webkit-border-radius: 0px 5px 5px 0px !Important;
+	border-radius: 0px 5px 5px 0px !Important;
+}
+@mixin boxShadowBlackWhite01 {
+	-moz-box-shadow: $boxShadowBlack01, $boxShadowWhite05;
+	-webkit-box-shadow: $boxShadowBlack01, $boxShadowWhite05;
+	box-shadow: $boxShadowBlack01, $boxShadowWhite05;
+}

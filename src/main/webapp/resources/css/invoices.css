@@ -1,0 +1,421 @@
+@charset "utf-8";
+tr.ui-sortable-helper, tr.ui-sortable-helper td {
+	background: #F8F7F2 !important;
+}
+tr.ui-sortable-helper {
+	-moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .1);
+}
+tr.ui-sortable-helper td {
+	border: 0 !important;
+}
+#contentWrapper ol#invoiceClientInfo {
+	width: 70%;
+}
+ol#invoiceClientInfo .inputWrapper {
+	width: 58%;
+	position: relative;
+}
+ol#invoiceClientInfo .inputWrapper input {
+/*	width: 94%;*/ /*87%*/
+}
+ol#invoiceClientInfo label {
+	width: 120px;
+}
+#contentWrapper ol#invoiceClientInfo li, #notes li {
+	float: left;
+}
+#notes li {
+	width: 45%;
+}
+#notes li:first-child {
+	margin-right: 8.8%;
+}
+#newInvoice textarea {
+	height:30px;
+}
+#newInvoice textarea, #newInvoice input, #newInvoice select {
+	margin-bottom:5px;
+}
+#invoice_items textarea, #invoice_items input, #invoice_items select {
+	margin-bottom: 0 !important;
+}
+.orderIcon {
+	margin: 11px 13px;
+}
+label {
+	width: 100%;
+}
+tr.addedToInvoice, tr.addedToInvoice a {
+	color:#a82618 !important;
+	text-shadow:none;
+}
+#newInvoice #invTemplate {
+	width: 100%;
+	background-color:#F8F7F2;
+/*	height:50px;*/
+	margin-bottom:20px;
+	border-radius:2px;
+	padding: 20px 0;	
+}
+#newInvoice #invTemplate h3, #newInvoice #invTemplate #nextInvoice {
+	padding-left: 20px;
+}
+#newInvoice #invTemplate #nextInvoice {
+	margin-bottom: 0;
+}
+#newInvoice #invTemplate .preview {
+	padding-right: 20px;
+}
+.innerPadding {
+	padding:20px;	
+}
+#newInvoice #invTemplate select {
+	width: auto;
+	float:right;
+}
+#nextInvNumber {
+	background:none;
+	border:none;
+	box-shadow:none;
+	padding:3px 5px;
+	color: #a82618;
+	font-size:1em;
+}
+.invoicePrefix {
+	display:block;
+	border:none;
+	margin-top:-1px;
+	margin-left:2px;
+}
+/* need this for the invoice wrapper to make it fit better */
+#contentWrapper {
+}
+/* need to hide data that is used but should not be displayed. */
+/* 9th is the staff billing rate */
+table#ct2 tr td:nth-child(3), table#ct2 tr td:nth-child(4), table#ct2 tr td:nth-child(5), table#ct2 tr td:nth-child(6), table#ct2 tr td:nth-child(10), table#ct2 tr td:nth-child(14), table#ct2 tr td:nth-child(15), table#ct2 tr td:nth-child(17), table#ct2 tr td:nth-child(18), table#ct2 tr td:nth-child(19), table#ct2 tr td:nth-child(22), table#ct2 th:nth-child(3), table#ct2 th:nth-child(4), table#ct2 th:nth-child(5), table#ct2 th:nth-child(6), table#ct2 th:nth-child(10), table#ct2 th:nth-child(14), table#ct2 th:nth-child(15), table#ct2 th:nth-child(17), table#ct2 th:nth-child(18), table#ct2 th:nth-child(19), table#ct2 th:nth-child(22), table#ct3 th:nth-child(8), table#ct3 tr td:nth-child(8), table#ct1 tr td:nth-child(5), table#ct1 th:nth-child(5), table#ct2 tr td:nth-child(23), table#ct2 th:nth-child(23) {
+   /* display:none; */
+   /* We may hide this at one point again */
+}
+table#ct3 th:nth-child(9), table#ct3 tr td:nth-child(9),table#ct3 th:nth-child(8), table#ct3 tr td:nth-child(8), table#ct1 tr td:nth-child(5), table#ct1 th:nth-child(5),table#ct2 tr td:nth-child(11), table#ct2 tr td:nth-child(11){
+  display:none;
+}
+table#ct1, table#ct2, table#ct3{
+	border-bottom:1px solid #dbdbdb;
+}
+table#ct1 th, table#ct2 th, table#ct3 th {
+	font-weight:bold;
+}
+table#ct1 tr td, table#ct2 tr td, table#ct3 tr td {
+	border-right:1px solid #dbdbdb;
+}
+table#ct2 tr td:nth-child(21), table#ct1 tr td:nth-child(5), table#ct3 tr td:nth-child(8) {
+	border-right:none;
+}
+table#ct1 tr#ct1_sort th:nth-child(4), table#ct2 tr#ct2_sort th:nth-child(21), table#ct3 tr#ct3_sort th:nth-child(9) {
+	border-right: 1px solid #ccc;
+}
+#jobNumberDiv {
+	right: 0;
+	position:absolute;
+	background-color:#F8F7F2;
+	width:30%;
+	padding: 10px;
+	border-radius:2px;
+}
+#jobNumberDiv h3 {
+	font-size:19px;
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+}
+#totals {
+	float:right;
+	margin-top:15px;
+}
+#totals input {
+	padding: 7px 0 4px 0;
+	margin: 0;
+	box-shadow:none;
+	background:none;
+	font-size:1.2em;
+	border: none;
+	width: 94.5%;
+}
+#totals span {
+	padding:4px 0 0 0;
+	font-size:1.2em;
+}
+#items input{
+	padding:0px 6px;
+	box-shadow:none;
+	background:none;
+	font-size:1em;
+	border:none;
+	border-radius: 0;
+	min-height:35px;
+	margin-top:0px !important;
+	width:100% !important;
+}
+#items textarea {
+	padding:0px 6px;
+	box-shadow:none;
+	background:none;
+	font-size:1em;
+	border:none;
+	border-radius: 0;
+	margin-top:8px !important;
+	width:95% !important;
+}
+.rowBottom {
+	border-bottom:1px solid #CCC;
+}
+.squareRedButton {
+	margin:5px !important;
+}
+#invoice_items {
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+}
+#invoice_items thead {
+	border-top:1px solid #CCC;
+	border-bottom: 2px solid #CCC;
+	background-color:#F8F7F2;
+}
+#invoice_items tr {
+	border-bottom:1px solid #CCC;
+}
+#invoice_items thead tr td {
+	padding:5px;
+}
+#invoice_items {
+	width:101%;
+	margin-top:15px;
+}
+table#invoice_items tbody tr td {
+	border-left:1px solid #CCC;
+}
+table#invoice_items tbody tr td:nth-child(1) {
+	width:200px;
+	border-left:none;
+}
+table#invoice_items tbody tr td:nth-child(3) {
+	width:350px;
+}
+table#invoice_items tr td:nth-child(8), table#invoice_items tr td:nth-child(4), table#invoice_items tr td:nth-child(5), table#invoice_items tr td:nth-child(6), table#invoice_items tr td:nth-child(7), table#invoice_items tr td:nth-child(8) input, table#invoice_items tr td:nth-child(4) input, table#invoice_items tr td:nth-child(5) input, table#invoice_items tr td:nth-child(6) input, table#invoice_items tr td:nth-child(7) input {
+	text-align:right;
+	padding-right:12px;
+}
+#itemAdd {
+	margin-top:15px;
+}
+.terms img {
+	/*margin-top:13px;*//*7px*/
+	/*margin-left:5px;*/
+	position: absolute;
+	top: 13px;
+	right: -20px;
+}
+#invoice_totals label {
+	width:300px;
+	margin-top: 7px;
+}
+#notes label {
+	text-align:left;
+}
+.autoCompleteWrapper:after {
+/*	left: 83%;*/
+}
+#clientJobDropDown {
+	width: 100%;
+	margin: 0 1%;
+}
+#clientJobDropDown input.ui-state-default.ui-combobox-input.ui-autocomplete-input.ui-widget.ui-widget-content.ui-corner-left{
+	width: 63%;
+}
+#clientJobsTextLabel {
+	width: 40px !important;
+}
+#showTime {
+	font-size: 0.8em;
+	margin:	5px 0 0 !important;
+	min-width: 110px;
+	padding: 7px;
+	text-shadow: 0 1px white !important;
+}
+.preview {
+	padding: 0px 5px;
+}
+.ct_form, .ct {
+	margin-top:0px !important;
+	margin-bottom:15px;
+}
+.blueBGInvoices {
+	padding:10px 25px;
+	font-size:14px;
+}
+/******************************************************************
+ Invoice Settings
+******************************************************************/
+#invoiceSettings .fancybottomContent {
+	padding-top: 24px;
+}
+#invoiceSettings .fancybottomContent input {
+	margin-bottom: 15px;
+}
+/******************************************************************
+ Invoice Terms Popup
+******************************************************************/
+.termsTable {
+	width: 100%;
+	display: block;
+	padding-top: 10px;
+}
+#invoiceTerms {
+	margin-top: 0;
+}
+#invoiceTermsWrapper .fancybottomContent {
+	padding-top: 24px;
+}
+#invoiceTermsWrapper .fancybottomContent input {
+	margin-left: 20px;
+}
+#invoiceTermsWrapper .fancybottomContent tr {
+	margin-bottom: 15px;
+	height: 37px;
+	display: block;
+}
+#invoiceTermsWrapper .inDays {
+	margin: 0 12px 0 49px;
+}
+.termsTable:nth-child(even) {
+}
+.ui-dialog .ui-dialog-titlebar-min,.dialog-restore {
+    margin: 0px !important;
+}
+/******************************************************************
+ Quick Search Billing Items
+******************************************************************/
+/* Styles are for Quick Search Billing Items Tab
+--------------------------*/
+#timeGrid {
+	margin-top: 30px;
+	/*padding:0 20px;*/
+}
+#timeGrid .ct_search_container, #billingItemData .ct_items_per_page_container {
+	display: none;
+}
+#timeGrid .billingInfoField {
+	padding-top: 0;
+	margin-top: -10px;
+}
+#timeGrid table {
+	margin-left: 0 !important;
+}
+#timeGrid .quickDataWrapper {
+	padding: 0;
+}
+#timeGrid .ct_form {
+	margin-bottom: 35px;
+}
+#timeGrid li {
+	width: 100%;
+	list-style: none;
+}
+#timeGrid .noInfo {
+	padding: 20px;
+	text-align: center;
+	border-bottom: 2px solid #CCC !important;
+	background-color: #F8F7F2;
+	border: 1px solid #CCC;
+}
+#timeGrid table  {
+	border: 1px solid #CCC;
+	border-radius: 2px;
+}
+#timeGrid table tbody tr td {
+}
+#timeGrid .ct th {
+	border-bottom: 0 !important;
+}
+#timeGrid thead {
+	background-color: #F8F7F2;
+	border-bottom: 2px solid #CCC;
+}
+#timeGrid .ct th {
+	cursor: default !important;
+}
+#timeGrid .ct td{
+	border-bottom: 0 !important;
+}
+.quickHalfCollapse table#ct1, .quickHalfCollapse table#ct2, .quickHalfCollapse table#ct3 {
+	width: 102%;
+	margin-left: 0;
+	margin-right: 0;
+}
+/* Change Apperance
+--------------------------*/
+.quickHalfCollapse table, .quickHalfCollapse tbody, .quickHalfCollapse tr, .quickHalfCollapse td {
+	display: block;
+}
+.quickHalfCollapse thead {
+	display: none !important;
+}
+/* Cell Works Like A Row
+--------------------------*/
+.quickHalfCollapse tr td {
+	padding: 6px 12px !important;
+	line-height: 150% !important;
+	border-top: 0;
+	position: relative;
+	width: 97%;	
+}
+.quickHalfCollapse #billingItemData tr {
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.quickHalfCollapse #billingItemData tr:first-child, .quickHalfCollapse #billingItemData .billingInfoField {
+	padding-top: 0 !Important;
+}
+.quickHalfCollapse #billingItemData tr td, .quickHalfCollapse #billingItemData tr td:hover  {
+	border-left: 0px !important;
+	border-right: 0px !important;
+}
+/* Column Labels
+--------------------------*/
+/* Use The Same Labels As In HTML Document */
+.quickHalfCollapse #billingItemData td:before {
+	padding-right: 8px;
+	white-space: nowrap;
+}
+.quickHalfCollapse #billingItemData td:before {
+	font-weight: bold;
+	color: #666;
+	width: 104px;
+	display: inline-block;	
+}
+.quickHalfCollapse #billingItemData td {	  	
+	border-bottom: 1px solid #FBFBFB;
+}
+.quickHalfCollapse #billingItemData .fieldWidth100:before {
+	display: none;
+}
+.quickHalfCollapse #billingItemData td:before {
+	content: "" attr(data-header) "";
+}
+.quickHalfCollapse .creativetbl_container {
+	margin: 0 !important;
+}
+.quickHalfCollapse #billingItemData hr {
+	display: none;
+}
+.quickHalfCollapse #billingItemData .titleField {
+	width: 104%;
+}
+.quickHalfCollapse #billingItemData li {
+}
+.quickHalfCollapse #billingItemData h5 {
+    margin-left: 12px;
+}

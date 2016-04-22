@@ -1,0 +1,319 @@
+ /*
+ * Fallr v1.3.2 - jQuery Plugin
+ * Simple & elegant modal box jQuery plugin
+ *
+ * Copyright 2011-2012 amatyr4n
+ * http://codecanyon.net/user/amatyr4n?ref=amatyr4n
+ *
+ * licensed under Envato licenses
+ * http://wiki.envato.com/support/legal-terms/licensing-terms/
+ */
+#fallr-overlay {
+	/* Make changes for overlay in 'jquery-ui-1.8.16.custom.css (.ui-widget-overlay)', 'jquery.fancybox-1.3.4.pack.js (check the code at the end)', 'jquery.fancybox-1.3.4.css (#fancybox-overlay)', 'jquery-fallr-1.3.css (#fallr-overlay)' */
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+	z-index: 1000 !important;
+}
+#fallr-wrapper,
+#fallr-wrapper * {
+    outline: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+#fallr-wrapper {
+	/* See the '#tlyPageGuideWrapper .tlypageguide_toggle' class in the jquery-ui-1.8.16.custom.css file for additional styling */
+    position: fixed;
+    overflow: visible;
+	z-index: 1000 !important;
+	background: white !important;
+}
+#fallr-icon {
+    position: absolute;
+	left:30px;	
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+	z-index: 10;
+}
+#fallr {
+    position: relative;
+	width: 100% !important;
+}
+#fallrHeadline {
+	margin-top:0;
+	margin-bottom:20px;
+	font-size:1.1em !important;
+	/* http://www.colorzilla.com/gradient-editor/#0b85c4+0,004875+100;Custom */
+	background: url(../images/uiLogin.png), -moz-linear-gradient(top,  rgba(11,133,196,1) 0%, rgba(0,72,117,1) 100%); /* FF3.6+ */
+	background: url(../images/uiLogin.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,133,196,1)), color-stop(100%,rgba(0,72,117,1))); /* Chrome,Safari4+ */
+	background: url(../images/uiLogin.png), -webkit-linear-gradient(top,  rgba(11,133,196,1) 0%,rgba(0,72,117,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: url(../images/uiLogin.png), -o-linear-gradient(top,  rgba(11,133,196,1) 0%,rgba(0,72,117,1) 100%); /* Opera 11.10+ */
+	background: url(../images/uiLogin.png), -ms-linear-gradient(top,  rgba(11,133,196,1) 0%,rgba(0,72,117,1) 100%); /* IE 10+ */
+	background: url(../images/uiLogin.png), linear-gradient(to bottom,  rgba(11,133,196,1) 0%,rgba(0,72,117,1) 100%); /* W3C */	
+}
+.headlineOnly {
+    height: 52px;
+	margin-bottom:0 !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;	
+}
+#fallrHeadline p {
+	padding: 15px 32px 15px 75px;
+	margin: 0 !important;
+}
+ #fallrHeadline h5 {
+	padding: 15px 32px 11px 75px;
+	margin: 0 !important;
+	color:white;
+}
+#fallrContent {
+	margin: 0 30px;
+}
+#fallrContent ul li {
+	min-height: 44px;
+}
+#fallr-buttons {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 30px 20px;
+    clear: both;
+    display: block;
+    text-align: right;
+}
+#fallr-buttons a:last-child {
+	margin-right: 0 !important;
+}
+#fallr .autoCompleteWrapper .ui-autocomplete {
+	height: 200px;
+}
+
+/******************************************************************
+ Github button style
+ http://nicolasgallagher.com/lab/css3-github-buttons/ 
+******************************************************************/
+#fallr-wrapper .fallr-button:first-child {
+}
+#fallr-wrapper .fallr-button,
+#fallr button,
+#fallr input[type="submit"] {
+    position: relative; 
+    overflow: visible; 
+    display: inline-block;
+	min-width: inherit;
+	float: none;
+}
+#fallr input[type="submit"] {
+	padding: 10px 18px 10px;
+}
+#fallr-wrapper .fallr-button:hover,
+#fallr-wrapper .fallr-button:focus,
+#fallr button:hover,
+#fallr button:focus,
+#fallr input[type="submit"]:hover,
+#fallr input[type="submit"]:focus {
+}
+#fallr-wrapper .fallr-button.fallr-button-danger {
+}
+#fallr-wrapper .fallr-button.fallr-button-danger:hover,
+#fallr-wrapper .fallr-button.fallr-button-danger:focus {  
+    border-color: #b53f3a;
+    border-bottom-color: #a0302a;
+    color: #fff; 
+    background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -o-linear-gradient(#dc5f59, #b33630);
+    background-image: -ms-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
+}
+#fallr abbr {
+    border-bottom: 1px dotted #333;
+}
+#fallr h1, 
+#fallr h2,
+#fallr h3,
+#fallr h4,
+#fallr h5,
+#fallr h6,
+#fallr p,
+#fallr form,
+#fallr input,
+#fallr textarea,
+#fallr label {
+	margin-top: 0;
+    margin-bottom: 15px;
+}
+#fallr input,
+#fallr textarea,
+#fallr select {
+}
+#fallr h3 {
+    font-size: 30px;
+    line-height: 45px;
+}
+#fallr h4 {
+    font-size: 25px;
+    line-height: 37px;
+}
+#fallr h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+#fallr input[type="text"],
+#fallr input[type="password"] {
+}
+#fallr input[type="text"]:focus,
+#fallr input[type="password"]:focus, 
+#fallr textarea:focus {
+}
+#fallr ol li, 
+#fallr ul li,
+#fallr blockquote, 
+#fallr q {
+    margin-left: 20px;
+}
+#fallr table {
+    border: 1px solid #ddd;
+	border-collapse:collapse;
+	border-spacing: 0;
+	line-height: 1.35em;
+	width: 100%;
+}
+#fallr th, 
+#fallr td {
+    padding: 10px;
+}
+#fallr th {
+    background-color: #cecece;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ececec), to(#cecece));
+    background-image: -moz-linear-gradient(#ececec, #cecece);
+    background-image: -o-linear-gradient(#ececec, #cecece);
+    background-image: -ms-linear-gradient(#ececec, #cecece);
+    background-image: linear-gradient(#ececec, #cecece);
+}
+
+/* Custom Icons */
+.icon-calendar {
+    background: url('../images/fallrImages/calendar.png');
+}
+.icon-chat {
+    background: url('../images/fallrImages/chat.png');
+}
+.icon-check {
+    background: url('../images/fallrImages/check.png');
+}
+.icon-config {
+    background: url('../images/fallrImages/wrench.png');
+}
+.icon-error {
+    background: url('../images/fallrImages/error.png');
+}
+.icon-pen {
+    background: url('../images/fallrImages/pen.png');
+}
+.icon-help {
+    background: url('../images/fallrImages/help.png');
+}
+.icon-info {
+    background: url('../images/fallrImages/info.png');
+}
+.icon-lamp {
+    background: url('../images/fallrImages/lamp.png');
+}
+.icon-mail {
+    background: url('../images/fallrImages/mail.png');
+}
+.icon-photo {
+    background: url('../images/fallrImages/camera.png');
+}
+.icon-secure {
+    background: url('../images/fallrImages/unlock.png');
+}
+.icon-trash {
+    background: url('../images/fallrImages/trash.png');
+}
+.icon-user {
+    background: url('../images/fallrImages/user.png');
+}
+.icon-up {
+    background: url('../images/fallrImages/up.png');
+}
+.icon-down {
+    background: url('../images/fallrImages/down.png');
+}
+.icon-left {
+    background: url('../images/fallrImages/left.png');
+}
+.icon-right {
+    background: url('../images/fallrImages/right.png');
+}
+.icon-at {
+    background: url('../images/fallrImages/at.png');
+}
+.icon-bar {
+    background: url('../images/fallrImages/bars.png');
+}
+.icon-book {
+    background: url('../images/fallrImages/book.png');
+}
+.icon-chart {
+    background: url('../images/fallrImages/chart.png');
+}
+.icon-clock {
+    background: url('../images/fallrImages/clock.png');
+}
+.icon-gear {
+    background: url('../images/fallrImages/cog.png');
+}
+.icon-document {
+    background: url('../images/fallrImages/document.png');
+}
+.icon-folder {
+    background: url('../images/fallrImages/folder.png');
+}
+.icon-heart {
+    background: url('../images/fallrImages/heart.png');
+}
+.icon-home {
+    background: url('../images/fallrImages/home.png');
+}
+.icon-key {
+    background: url('../images/fallrImages/key.png');
+}
+.icon-magnifier {
+    background: url('../images/fallrImages/magnifier.png');
+}
+.icon-pin {
+    background: url('../images/fallrImages/pin.png');
+}
+.icon-minus {
+    background: url('../images/fallrImages/minus.png');
+}
+.icon-window {
+    background: url('../images/fallrImages/window.png');
+}
+.icon-plus {
+    background: url('../images/fallrImages/plus.png');
+}
+.icon-reload {
+    background: url('../images/fallrImages/reload.png');
+}
+.icon-quote {
+    background: url('../images/fallrImages/quote.png');
+}
+.icon-star {
+    background: url('../images/fallrImages/star.png');
+}
+.icon-tag {
+    background: url('../images/fallrImages/tag.png');
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>UI Elements</title>
+<link rel="stylesheet" href="../css/UI_elements/jqtransformCustom.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../css/uiElements.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../css/UI_elements/Perspective-Sans-fontfacekit/stylesheet.css" type="text/css" charset="utf-8" />
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<style>
+.clear {
+	clear: both;
+	padding: 10px;
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+<script type="text/javascript" src="../css/UI_elements/jquery.jqtransform.js" ></script>
+<script language="javascript">
+	$(function(){
+		$('form').jqTransform({});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="container">
+<form action="" method="get">
+
+	<label>text field</label>
+	<input name="" type="text" />
+
+	<div class="clear"></div>
+
+	<label>text field disabled</label>
+	<input name="" type="text" disabled="disabled" />
+
+	<div class="clear"></div>
+
+	<label>text field not correct</label>
+	<input name="" type="text" class="formWarning" />
+		
+	<div class="clear"></div>
+	
+	<label>text area</label>
+	<textarea name="" cols="" rows=""></textarea>
+
+	<div class="clear"></div>
+	
+	<label>checkbox</label>
+	<input name="" type="checkbox" value="" checked="checked" />
+	<input name="" type="checkbox" value="" />
+
+	<div class="clear"></div>
+	
+	<label>radio</label>
+	<input name="radio"  type="radio" value="" checked="checked" />
+	<input name="radio" type="radio" value="" />
+
+	<div class="clear"></div>
+	
+	<label>select</label>
+	<select name="">
+		<option>See Values</option>
+		<option>Value 01</option>
+		<option>Value 02</option>
+		<option>Value 03</option>
+		<option>Value 04</option>
+	</select>
+
+	<div class="clear"></div>
+	
+	<label>file upload</label>
+	<input name="" type="file" class="fileUpload" />
+
+	<div class="clear"></div>
+	
+	<button class="blueButton" type="button">add category</button>
+
+	<button type="button">clear</button>
+
+	<div class="clear"></div>
+
+	<button class="blueButton rightButton" type="button">continue</button>
+
+	<button class="leftButton" type="button">back</button>
+
+	<div class="clear"></div>
+
+	<button type="button" class="readMore">read more</button>
+	
+	<button type="button" class="squareGreenButton plusButton"></button>
+
+	<button type="button" class="turnArrowButton"></button>
+
+	<button type="button" class="squareRedButton closeButton"></button>
+	
+	<div class="dateWrapper"><input type="text" name="dueDate" id="dueDate" class="fieldWidth150 date hasDatepicker"><span class="datePickerIcon"></span></div>
+</form>
+
+<div class="clear"></div>
+
+<a href="#" title="Expense categories are added in order to organize your expenses." class="tooltip">Link</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
