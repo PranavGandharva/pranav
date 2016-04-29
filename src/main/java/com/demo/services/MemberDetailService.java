@@ -7,6 +7,7 @@ import com.demo.vo.MemberDetail;
 
 public interface MemberDetailService {
 
+	public Employee getById(Integer id);
 	public void insert(Employee object);
 	public void update(Employee object);
 	public void delete(Employee object);

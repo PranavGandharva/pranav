@@ -12,6 +12,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class ProjectPropertyBlock {
 
@@ -24,11 +30,13 @@ public class ProjectPropertyBlock {
 	
 	@ManyToOne
 	@JoinColumn(name="project_id")
+	@JsonBackReference
 	private Project project;
 	
 	
 	@OneToMany(mappedBy="block", cascade=CascadeType.ALL, orphanRemoval=true)
 	@OrderColumn(name = "idx")
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<BlockProgress> progress = new ArrayList<BlockProgress>();
 
 

@@ -1,6 +1,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <script type="text/javascript">
+$('#projectContainer').DataTable();
 var options = {
 		success : function(data) {
 			$.fallr('hide');
@@ -66,6 +67,7 @@ function onUpdateClick(e) {
 	});
 }
 function onClickDetail(e) {
+	jQuery.noConflict();
 	$.fancybox({
 		'href' : "fragment/fragment_view_member_detail?id=" + $(e).closest('tr').find('.propID').text(),
 		'autoDimensions': false,
@@ -111,6 +113,7 @@ function onDeleteClick(e) {
 
 function submitForm() {
 	toggleLoadingIcon(true);
+	jQuery.noConflict();
 	$('#employee').ajaxForm(options).submit();
 	return false;
 }
@@ -224,10 +227,10 @@ function submitForm() {
 				<c:set var="counter" value="1" />
 				<c:forEach items="${members }" var="member">
 					<tr class="<c:out value="${odd ? 'odd': 'even'}"/>">
-						<td>${counter }</td>
+				     	<td>${counter }</td>
 						<td style="display:none;" class="propID">${member.id }</td>
 						<td class="propName"><a class="invOption" rel="" onclick="onClickDetail(this);" >${member.firstname } ${member.lastname}</a></td>
-						<td>${member.detail.age }</td>
+						<td>${member.detail.age}</td>
 						
 						<td width="40"><img class="invOption" src="resources/images/invOption.png" rel="" onclick="editOptions(this);"></td>
 						

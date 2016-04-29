@@ -18,7 +18,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.OrderColumn;
 
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.hibernate.annotations.Type;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 public class Project {
@@ -42,22 +47,30 @@ public class Project {
 	private boolean active;
 	
 	@ManyToOne
+	@JoinColumn(name="ProjectTypeId")
+	private ProjectType projectType;
+	
+	@ManyToOne
 	@JoinColumn(name="ProjectStatus")
 	private ProjectStatus status;
 	
-	@OneToMany
+	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="project_id")
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private Set<ProjectFile> projectfiles= new HashSet<ProjectFile>();
 	
 	@OneToMany(mappedBy="project")
 	@OrderColumn(name="blckidx")
 	@Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-	private List<ProjectPropertyBlock> blocks = new ArrayList<ProjectPropertyBlock>();	
+	@LazyCollection(LazyCollectionOption.FALSE)
+	@JsonManagedReference
+	public List<ProjectPropertyBlock> blocks = new ArrayList<ProjectPropertyBlock>();	
 
     @ManyToMany
     @JoinTable(name="ProjectContactPerson",
     joinColumns={@JoinColumn(name="Project_id")},
     inverseJoinColumns={@JoinColumn(name="Employee_id")})
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<Employee> contactPerson= new ArrayList<Employee>();
 	
     
@@ -66,6 +79,7 @@ public class Project {
     @JoinTable(name="ProjectPropertyType",
     joinColumns={@JoinColumn(name="Project_id")},
     inverseJoinColumns={@JoinColumn(name="propertyTypeId")})
+    @LazyCollection(LazyCollectionOption.FALSE)
     private List<PropertyType> propertyType= new ArrayList<PropertyType>();
     
     
@@ -233,16 +247,26 @@ public class Project {
 	}
 
 
+	public ProjectType getProjectType() {
+		return projectType;
+	}
+
+
+	public void setProjectType(ProjectType projectType) {
+		this.projectType = projectType;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Project [id=" + id + ", name=" + name + ", city=" + city + ", address1=" + address1 + ", address2="
 				+ address2 + ", description=" + description + ", planfilepath=" + planfilepath + ", startdate="
-				+ startdate + ", enddate=" + enddate + ", active=" + active + ", status=" + status + ", projectfiles="
-				+ projectfiles + ", blocks=" + blocks + ", contactPerson=" + contactPerson + ", propertyType="
-				+ propertyType + ", paymentPlan=" + paymentPlan + "]";
+				+ startdate + ", enddate=" + enddate + ", active=" + active + ", projectType=" + projectType
+				+ ", status=" + status + ", projectfiles=" + projectfiles + ", blocks=" + blocks + ", contactPerson="
+				+ contactPerson + ", propertyType=" + propertyType + ", paymentPlan=" + paymentPlan + "]";
 	}
-    
-        
+
+       
     
 
 }

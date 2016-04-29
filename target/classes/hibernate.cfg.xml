@@ -11,6 +11,9 @@
 <property name="show_sql">true</property>
 <property name="hibernate.hbm2ddl.auto">update</property>
 
+
+
+
 <mapping class="com.demo.vo.BlockProgress"/>
 <mapping class="com.demo.vo.BookingDetail"/>
 <mapping class="com.demo.vo.Employee"/>

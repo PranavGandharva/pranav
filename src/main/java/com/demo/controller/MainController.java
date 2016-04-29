@@ -18,4 +18,18 @@ public class MainController {
 		return "admin/manage_member";
 	}
 	
+	@RequestMapping("employees")
+	public String getEmployee(){
+		return "admin/manage_employee";
+	}
+	
+	@RequestMapping("projects")
+	public String getProject(){
+		return"admin/manage_project";
+	}
+	@RequestMapping("properties")
+	public String getProperty(){
+		return "admin/manage_property";
+		}
+	
 }

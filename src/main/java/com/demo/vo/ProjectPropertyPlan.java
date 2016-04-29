@@ -7,6 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 public class ProjectPropertyPlan {
 
@@ -24,6 +28,7 @@ public class ProjectPropertyPlan {
 	
 	@ManyToOne
 	@JoinColumn(name="Block_ID")
+	@JsonBackReference
     private ProjectPropertyBlock block;
     
 	@ManyToOne
@@ -32,6 +37,7 @@ public class ProjectPropertyPlan {
 	
 	@ManyToOne
 	@JoinColumn(name="projectID")
+	@JsonIgnore
     private Project project;
 		
 	private String mimeType;

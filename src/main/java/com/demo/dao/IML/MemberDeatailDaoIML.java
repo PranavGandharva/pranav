@@ -18,27 +18,28 @@ public class MemberDeatailDaoIML implements MemberDetailDao{
 
 	public Employee getById(Integer key) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return factory.getCurrentSession().get(Employee.class, key);
 	}
 
 	public List<Employee> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return factory.getCurrentSession().createCriteria(Employee.class).list();
 	}
 
 	public void save(Employee object) {
 		// TODO Auto-generated method stub
-		
+		factory.getCurrentSession().save(object);
 	}
 
 	public void update(Employee object) {
 		// TODO Auto-generated method stub
-		
+		factory.getCurrentSession().update(object);
 	}
 
 	public void delete(Employee object) {
 		// TODO Auto-generated method stub
-		
+		factory.getCurrentSession().delete(object);
 	}	
 	
 	

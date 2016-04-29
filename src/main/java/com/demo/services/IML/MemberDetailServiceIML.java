@@ -23,24 +23,30 @@ public class MemberDetailServiceIML implements MemberDetailService{
 	@Transactional
 	public void insert(Employee object) {
 		// TODO Auto-generated method stub
-		
+		dao.save(object);
 	}
 
 	@Transactional
 	public void update(Employee object) {
 		// TODO Auto-generated method stub
-		
+		dao.update(object);
 	}
     @Transactional
 	public void delete(Employee object) {
 		// TODO Auto-generated method stub
-		
+		dao.delete(object);
 	}
 
     @Transactional
 	public List<Employee> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return dao.getAll();
+	}
+
+    @Transactional
+	public Employee getById(Integer id) {
+		// TODO Auto-generated method stub
+		return dao.getById(id);
 	} 
 	
 }

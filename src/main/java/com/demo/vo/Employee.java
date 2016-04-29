@@ -15,6 +15,8 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 @Entity
 @Table(uniqueConstraints=@UniqueConstraint(columnNames="username"),name="UNIQUE_USERNAME")
@@ -56,6 +58,7 @@ public class Employee {
 	private String phnNo;
 	
 	@ManyToMany(mappedBy="contactPerson")
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<Project> assignProject= new ArrayList<Project>();
 
 	public int getId() {

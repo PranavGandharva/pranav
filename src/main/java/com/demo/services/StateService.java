@@ -10,6 +10,6 @@ public interface StateService {
     public void update(State object);
     public List<State> getAll();
     public void delete(State object);    
-
+    public State getById(Integer id);
 
 }
